@@ -1,0 +1,32 @@
+Q:\gui-hold\c#\Student System\bin\Debug\Student System.exe.config
+Q:\gui-hold\c#\Student System\obj\Debug\Student System.exe
+Q:\gui-hold\c#\Student System\obj\Debug\Student System.pdb
+Q:\gui\c#\Student System\obj\Debug\ResolveAssemblyReference.cache
+Q:\gui\c#\Student System\obj\Debug\Student_System.Academic_Registration.resources
+Q:\gui\c#\Student System\obj\Debug\Student_System.Form1.resources
+Q:\gui\c#\Student System\obj\Debug\Student_System.Properties.Resources.resources
+Q:\gui\c#\Student System\obj\Debug\Student_System.Student_Search.resources
+Q:\gui\c#\Student System\obj\Debug\Student_System.StudentAccount.resources
+Q:\gui\c#\Student System\obj\Debug\Student_System.StudentResults.resources
+Q:\gui\c#\Student System\obj\Debug\Student_System.StudentsPersonalDetails.resources
+Q:\gui\c#\Student System\obj\Debug\Student System.csproj.GenerateResource.Cache
+Q:\gui\c#\Student System\bin\Debug\Student System.exe.config
+Q:\gui\c#\Student System\bin\Debug\Student System.exe.manifest
+Q:\gui\c#\Student System\bin\Debug\Student System.application
+Q:\gui\c#\Student System\bin\Debug\Student System.exe
+Q:\gui\c#\Student System\bin\Debug\Student System.pdb
+Q:\gui\c#\Student System\bin\Debug\PN_ResSystem.dll
+Q:\gui\c#\Student System\bin\Debug\Progress.o4glrt.dll
+Q:\gui\c#\Student System\bin\Debug\WindowsApplication4.exe
+Q:\gui\c#\Student System\bin\Debug\PN_ValidateUsers.dll
+Q:\gui\c#\Student System\bin\Debug\Progress.Messages.dll
+Q:\gui\c#\Student System\bin\Debug\Progress.ssl.dll
+Q:\gui\c#\Student System\bin\Debug\WindowsApplication4.pdb
+Q:\gui\c#\Student System\obj\Debug\Student System.TrustInfo.xml
+Q:\gui\c#\Student System\obj\Debug\Student System.exe.manifest
+Q:\gui\c#\Student System\obj\Debug\Student System.application
+Q:\gui\c#\Student System\obj\Debug\Student System.exe
+Q:\gui\c#\Student System\obj\Debug\Student System.pdb
+Q:\gui\c#\Res System\bin\Debug\Student System.exe.config
+Q:\gui\c#\Res System\obj\Debug\Student System.exe
+Q:\gui\c#\Res System\obj\Debug\Student System.pdb

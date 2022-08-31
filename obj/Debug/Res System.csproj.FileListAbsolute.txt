@@ -1,0 +1,386 @@
+\\canna\programs\gui\c#\Res System\bin\Debug\RAS.exe.config
+\\canna\programs\gui\c#\Res System\obj\Debug\RAS.exe
+\\canna\programs\gui\c#\Res System\obj\Debug\RAS.pdb
+\\canna\programs\gui\c#\Res System\bin\Debug\RAS.exe.manifest
+\\canna\programs\gui\c#\Res System\bin\Debug\RAS.application
+\\canna\programs\gui\c#\Res System\bin\Debug\RAS.exe
+\\canna\programs\gui\c#\Res System\bin\Debug\RAS.pdb
+\\canna\programs\gui\c#\Res System\bin\Debug\PN_ResSystem.dll
+\\canna\programs\gui\c#\Res System\bin\Debug\Progress.o4glrt.dll
+\\canna\programs\gui\c#\Res System\bin\Debug\WindowsApplication4.exe
+\\canna\programs\gui\c#\Res System\bin\Debug\PN_ValidateUsers.dll
+\\canna\programs\gui\c#\Res System\bin\Debug\Progress.Messages.dll
+\\canna\programs\gui\c#\Res System\bin\Debug\Progress.ssl.dll
+\\canna\programs\gui\c#\Res System\bin\Debug\WindowsApplication4.pdb
+\\canna\programs\gui\c#\Res System\obj\Debug\ResolveAssemblyReference.cache
+\\canna\programs\gui\c#\Res System\obj\Debug\Student_System.Student_Search.resources
+\\canna\programs\gui\c#\Res System\obj\Debug\Student_System.StudentResults.resources
+\\canna\programs\gui\c#\Res System\obj\Debug\Student_System.StudentsPersonalDetails.resources
+\\canna\programs\gui\c#\Res System\obj\Debug\Student_System.MainForm.resources
+\\canna\programs\gui\c#\Res System\obj\Debug\Res_System.Properties.Resources.resources
+\\canna\programs\gui\c#\Res System\obj\Debug\Res_System.ResList.resources
+\\canna\programs\gui\c#\Res System\obj\Debug\Res System.csproj.GenerateResource.Cache
+\\canna\programs\gui\c#\Res System\obj\Debug\RAS.TrustInfo.xml
+\\canna\programs\gui\c#\Res System\obj\Debug\RAS.exe.manifest
+\\canna\programs\gui\c#\Res System\obj\Debug\RAS.application
+Q:\gui\c#\Res System\obj\Debug\ResolveAssemblyReference.cache
+Q:\gui\c#\Res System\obj\Debug\LoginScreen.Login.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Assign_Rooms.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Code_LookUp.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Contact.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.firstyrsonly.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.HouseComm.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Manual.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.stanleyaccessreport.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.StringBox.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.DPR.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.resstatus.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Results_Year.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Function.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Loading.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Student_Search.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.StudentsPersonalDetails.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.MainForm.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Properties.Resources.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Reports.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.ResList.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.res_access.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Rooms.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Sections.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.about.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.tac.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Year.resources
+Q:\gui\c#\Res System\obj\Debug\Res_System.Year_Exam.resources
+Q:\gui\c#\Res System\obj\Debug\Res System.csproj.GenerateResource.Cache
+Q:\gui\c#\Res System\obj\Debug\RdlCompile.cache
+Q:\gui\c#\Res System\obj\Debug\RdlCompile.compiled
+Q:\gui\c#\Res System\bin\Debug\Res System.exe.config
+Q:\gui\c#\Res System\bin\Debug\Res System.exe.manifest
+Q:\gui\c#\Res System\bin\Debug\Res System.application
+Q:\gui\c#\Res System\bin\Debug\Res System.exe
+Q:\gui\c#\Res System\bin\Debug\Res System.pdb
+Q:\gui\c#\Res System\bin\Debug\PN_ResSystem.dll
+Q:\gui\c#\Res System\bin\Debug\PN_ValidateUsers.dll
+Q:\gui\c#\Res System\bin\Debug\Progress.o4glrt.dll
+Q:\gui\c#\Res System\bin\Debug\Progress.Messages.dll
+Q:\gui\c#\Res System\bin\Debug\Progress.ssl.dll
+Q:\gui\c#\Res System\obj\Debug\Res System.TrustInfo.xml
+Q:\gui\c#\Res System\obj\Debug\Res System.exe.manifest
+Q:\gui\c#\Res System\obj\Debug\Res System.application
+Q:\gui\c#\Res System\obj\Debug\Res System.exe
+Q:\gui\c#\Res System\obj\Debug\Res System.pdb
+Q:\c#\programs\Res System\bin\Debug\Res System.exe.config
+Q:\c#\programs\Res System\bin\Debug\Res System.exe.manifest
+Q:\c#\programs\Res System\bin\Debug\Res System.application
+Q:\c#\programs\Res System\bin\Debug\Res System.exe
+Q:\c#\programs\Res System\bin\Debug\Res System.pdb
+Q:\c#\programs\Res System\bin\Debug\PN_ResSystem.dll
+Q:\c#\programs\Res System\bin\Debug\PN_ValidateUsers.dll
+Q:\c#\programs\Res System\bin\Debug\Progress.o4glrt.dll
+Q:\c#\programs\Res System\bin\Debug\Progress.Messages.dll
+Q:\c#\programs\Res System\bin\Debug\Progress.ssl.dll
+Q:\c#\programs\Res System\obj\Debug\ResolveAssemblyReference.cache
+Q:\c#\programs\Res System\obj\Debug\LoginScreen.Login.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Assign_Rooms.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Code_LookUp.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Contact.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.firstyrsonly.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.HouseComm.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Manual.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.stanleyaccessreport.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.StringBox.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.DPR.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.resstatus.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Results_Year.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Function.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Loading.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Student_Search.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.StudentsPersonalDetails.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.MainForm.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Properties.Resources.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Reports.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.ResList.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.res_access.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Rooms.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Sections.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.about.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.tac.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Year.resources
+Q:\c#\programs\Res System\obj\Debug\Res_System.Year_Exam.resources
+Q:\c#\programs\Res System\obj\Debug\Res System.csproj.GenerateResource.Cache
+Q:\c#\programs\Res System\obj\Debug\RdlCompile.cache
+Q:\c#\programs\Res System\obj\Debug\RdlCompile.compiled
+Q:\c#\programs\Res System\obj\Debug\Res System.TrustInfo.xml
+Q:\c#\programs\Res System\obj\Debug\Res System.exe.manifest
+Q:\c#\programs\Res System\obj\Debug\Res System.application
+Q:\c#\programs\Res System\obj\Debug\Res System.exe
+Q:\c#\programs\Res System\obj\Debug\Res System.pdb
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res System.csprojResolveAssemblyReference.cache
+\\canna\programs\csharp\programs\Res System\obj\Debug\Performance.StudentPerformance.StudentPerformanceReport.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Criteria.Criteria.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Reports_Disc.Reports.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Discipline.Reports.SummaryReport.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Code_LookUp.Code_LookUp.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Discipline.UpdateScreen.Discipline_List.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Discipline_Screen.StudentsPersonalDetails.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\StringBox.StringBox.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Stanley.ReportForm.StanReportForm.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Stanley.StanleyAccessControl.HallResSelect.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Stanley.stanleyaccessreport.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Labels.AdhocLabels.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Honours.LetterSettings.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Labels.StudentImport.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Search_Grid_Students.Search_Grid_Students.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Medical_Request_First_Years_Only.firstyrsonly.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Reports_Medical.Reports.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Student_Medical.StudentMedicalDetails.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Student_Personal_Details.Reports.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_Access.res_access.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Student_Personal_Details.StudentsPersonalDetails.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\StudentDetails.StudentResults.CourseResultsFilters.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Reports_Student_Results.Reports.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Student_Results.Report_Student_Marks.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Student_Results.StudentResults.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Student_Search.Student_Search.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.ReportForm.ContactReport.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Assign_Rooms.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.LabelAddress.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.OppiSearch.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Contact.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.firstyrsonly.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Manual.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.DPR.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.SearchOptions.PickSemester.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.resstatus.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Results_Year.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Function.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Loading.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.MainForm.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Properties.Resources.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Reports.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.ResList.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Rooms.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Sections.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.about.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.StudentClassMarks.StudentCourseMarks.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.EventScreen.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.ResFunctions.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.StudentLeadership.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.tac.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Year.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res_System.Year_Exam.resources
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res System.csproj.GenerateResource.Cache
+\\canna\programs\csharp\programs\Res System\obj\Debug\RdlCompile.cache
+\\canna\programs\csharp\programs\Res System\obj\Debug\RdlCompile.compiled
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res System.exe
+\\canna\programs\csharp\programs\Res System\obj\Debug\Res System.pdb
+Z:\csharp\programs\Res System\obj\Debug\Res System.csproj.AssemblyReference.cache
+Z:\csharp\programs\Res System\obj\Debug\ConferenceSys.Reports.resources
+Z:\csharp\programs\Res System\obj\Debug\Performance.StudentPerformance.StudentPerformanceReport.resources
+Z:\csharp\programs\Res System\obj\Debug\Criteria.Criteria.resources
+Z:\csharp\programs\Res System\obj\Debug\Reports_Disc.Reports.resources
+Z:\csharp\programs\Res System\obj\Debug\Discipline.Reports.SummaryReport.resources
+Z:\csharp\programs\Res System\obj\Debug\Code_LookUp.Code_LookUp.resources
+Z:\csharp\programs\Res System\obj\Debug\Discipline.UpdateScreen.Discipline_List.resources
+Z:\csharp\programs\Res System\obj\Debug\Discipline_Screen.StudentsPersonalDetails.resources
+Z:\csharp\programs\Res System\obj\Debug\StringBox.StringBox.resources
+Z:\csharp\programs\Res System\obj\Debug\SearchEmployee.Search_Protea_Users.resources
+Z:\csharp\programs\Res System\obj\Debug\DMU.PDFViewer.resources
+Z:\csharp\programs\Res System\obj\Debug\DMU.PicForm.resources
+Z:\csharp\programs\Res System\obj\Debug\Protea.StudentResults.EmailTranscript.resources
+Z:\csharp\programs\Res System\obj\Debug\RegistrarsSystem.StudentResults.TranscriptMethod.resources
+Z:\csharp\programs\Res System\obj\Debug\IOPS.ResidentialOperations.OppidanDiningHalls.resources
+Z:\csharp\programs\Res System\obj\Debug\ReportForm.ResidenceReportForm.resources
+Z:\csharp\programs\Res System\obj\Debug\Stanley.ReportForm.StanReportForm.resources
+Z:\csharp\programs\Res System\obj\Debug\Stanley.StanleyAccessControl.HallResSelect.resources
+Z:\csharp\programs\Res System\obj\Debug\Stanley.stanleyaccessreport.resources
+Z:\csharp\programs\Res System\obj\Debug\Labels.AdhocLabels.resources
+Z:\csharp\programs\Res System\obj\Debug\Honours.LetterSettings.resources
+Z:\csharp\programs\Res System\obj\Debug\Labels.StudentImport.resources
+Z:\csharp\programs\Res System\obj\Debug\Search_Grid_Students.Search_Grid_Students.resources
+Z:\csharp\programs\Res System\obj\Debug\Medical_Request_First_Years_Only.firstyrsonly.resources
+Z:\csharp\programs\Res System\obj\Debug\Reports_Medical.Reports.resources
+Z:\csharp\programs\Res System\obj\Debug\Student_Medical.StudentMedicalDetails.resources
+Z:\csharp\programs\Res System\obj\Debug\Student_Personal_Details.Reports.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_Access.res_access.resources
+Z:\csharp\programs\Res System\obj\Debug\Student_Personal_Details.StudentsPersonalDetails.resources
+Z:\csharp\programs\Res System\obj\Debug\StudentDetails.StudentResults.CourseResultsFilters.resources
+Z:\csharp\programs\Res System\obj\Debug\Reports_Student_Results.Reports.resources
+Z:\csharp\programs\Res System\obj\Debug\Student_Results.Report_Student_Marks.resources
+Z:\csharp\programs\Res System\obj\Debug\Student_Results.StudentResults.resources
+Z:\csharp\programs\Res System\obj\Debug\Student_Search.Student_Search.resources
+Z:\csharp\programs\Res System\obj\Debug\OppiBusBan.DinningHallBan.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.ReportForm.ContactReport.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.FunctionReports.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Assign_Rooms.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.LabelAddress.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.AttendanceRegister.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.SelectYear.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.OppiSearch.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Contact.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.firstyrsonly.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Manual.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.DPR.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.SearchOptions.PickSemester.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.resstatus.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Results_Year.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Loading.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.MainForm.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Properties.Resources.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Reports.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.ResList.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Rooms.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Sections.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.about.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.SearchOptions.SearchDates.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.StudentClassMarks.StudentCourseMarks.resources
+Z:\csharp\programs\Res System\obj\Debug\ResSystem.Updates.res_vac.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.EventScreen.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.OtherResidences.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.ResFunctions.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.StudentLeadership.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.tac.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Year.resources
+Z:\csharp\programs\Res System\obj\Debug\Res_System.Year_Exam.resources
+Z:\csharp\programs\Res System\obj\Debug\Res System.csproj.GenerateResource.cache
+Z:\csharp\programs\Res System\obj\Debug\Res System.csproj.CoreCompileInputs.cache
+Z:\csharp\programs\Res System\obj\Debug\Res System.exe
+Z:\csharp\programs\Res System\obj\Debug\Res System.pdb
+Q:\csharp\programs\Res System\bin\Debug\Res System.exe.config
+Q:\csharp\programs\Res System\bin\Debug\Res System.exe.manifest
+Q:\csharp\programs\Res System\bin\Debug\Res System.application
+Q:\csharp\programs\Res System\bin\Debug\Res System.exe
+Q:\csharp\programs\Res System\bin\Debug\Res System.pdb
+Q:\csharp\programs\Res System\bin\Debug\PN_Catering.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_ConfAdmin.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Conference.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Dept.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Discipline.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Global.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Grad.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Letters.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Registrars.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_ResSystem.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Stanley.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Student_Results.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Student_Search.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_StuInfo.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_System.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Tutors.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_ValidateUsers.dll
+Q:\csharp\programs\Res System\bin\Debug\Progress.Messages.dll
+Q:\csharp\programs\Res System\bin\Debug\Progress.o4glrt.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_AcademicAdmin.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_AdmReg.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Admissions.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Alumni.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Budget.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_BURSARY.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Assets.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_PrintUnit.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_IPU.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Research_Reports.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Endow.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Media.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Hcc.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_finance_reports.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Fin_Budget.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Stutrs.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Schools.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_CPU.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_CSD.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_StudentsAdm.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_SpaceUse.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Deans.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Honours.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_HRD.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_PostGrad.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Laundry.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_StudentRegInfo.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Research.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_DMU.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Estates.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Finance.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_StudentAccounts.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_SMS.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_Venues.dll
+Q:\csharp\programs\Res System\bin\Debug\PN_StuReg.dll
+Q:\csharp\programs\Res System\bin\Debug\Proxy.pdb
+Q:\csharp\programs\Res System\bin\Debug\Proxy.xml
+Q:\csharp\programs\Res System\obj\Debug\Res System.csprojResolveAssemblyReference.cache
+Q:\csharp\programs\Res System\obj\Debug\ConferenceSys.Reports.resources
+Q:\csharp\programs\Res System\obj\Debug\Performance.StudentPerformance.StudentPerformanceReport.resources
+Q:\csharp\programs\Res System\obj\Debug\Criteria.Criteria.resources
+Q:\csharp\programs\Res System\obj\Debug\Reports_Disc.Reports.resources
+Q:\csharp\programs\Res System\obj\Debug\Discipline.Reports.SummaryReport.resources
+Q:\csharp\programs\Res System\obj\Debug\Code_LookUp.Code_LookUp.resources
+Q:\csharp\programs\Res System\obj\Debug\Discipline.UpdateScreen.Discipline_List.resources
+Q:\csharp\programs\Res System\obj\Debug\Discipline_Screen.StudentsPersonalDetails.resources
+Q:\csharp\programs\Res System\obj\Debug\StringBox.StringBox.resources
+Q:\csharp\programs\Res System\obj\Debug\SearchEmployee.Search_Protea_Users.resources
+Q:\csharp\programs\Res System\obj\Debug\DMU.PDFViewer.resources
+Q:\csharp\programs\Res System\obj\Debug\DMU.PicForm.resources
+Q:\csharp\programs\Res System\obj\Debug\Protea.StudentResults.EmailTranscript.resources
+Q:\csharp\programs\Res System\obj\Debug\RegistrarsSystem.StudentResults.TranscriptMethod.resources
+Q:\csharp\programs\Res System\obj\Debug\IOPS.ResidentialOperations.OppidanDiningHalls.resources
+Q:\csharp\programs\Res System\obj\Debug\ReportForm.ResidenceReportForm.resources
+Q:\csharp\programs\Res System\obj\Debug\Stanley.ReportForm.StanReportForm.resources
+Q:\csharp\programs\Res System\obj\Debug\Stanley.StanleyAccessControl.HallResSelect.resources
+Q:\csharp\programs\Res System\obj\Debug\Stanley.stanleyaccessreport.resources
+Q:\csharp\programs\Res System\obj\Debug\Labels.AdhocLabels.resources
+Q:\csharp\programs\Res System\obj\Debug\Honours.LetterSettings.resources
+Q:\csharp\programs\Res System\obj\Debug\Labels.StudentImport.resources
+Q:\csharp\programs\Res System\obj\Debug\Search_Grid_Students.Search_Grid_Students.resources
+Q:\csharp\programs\Res System\obj\Debug\Medical_Request_First_Years_Only.firstyrsonly.resources
+Q:\csharp\programs\Res System\obj\Debug\Reports_Medical.Reports.resources
+Q:\csharp\programs\Res System\obj\Debug\Student_Medical.StudentMedicalDetails.resources
+Q:\csharp\programs\Res System\obj\Debug\Student_Personal_Details.Reports.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_Access.res_access.resources
+Q:\csharp\programs\Res System\obj\Debug\Student_Personal_Details.StudentsPersonalDetails.resources
+Q:\csharp\programs\Res System\obj\Debug\StudentDetails.StudentResults.CourseResultsFilters.resources
+Q:\csharp\programs\Res System\obj\Debug\Reports_Student_Results.Reports.resources
+Q:\csharp\programs\Res System\obj\Debug\Student_Results.Report_Student_Marks.resources
+Q:\csharp\programs\Res System\obj\Debug\Student_Results.StudentResults.resources
+Q:\csharp\programs\Res System\obj\Debug\Student_Search.Student_Search.resources
+Q:\csharp\programs\Res System\obj\Debug\OppiBusBan.DinningHallBan.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.ReportForm.ContactReport.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.FunctionReports.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Assign_Rooms.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.LabelAddress.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.AttendanceRegister.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.SelectYear.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.OppiSearch.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Contact.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.firstyrsonly.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Manual.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.DPR.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.SearchOptions.PickSemester.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.resstatus.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Results_Year.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Loading.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.MainForm.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Properties.Resources.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Reports.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.ResList.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Rooms.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Sections.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.about.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.SearchOptions.SearchDates.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.StudentClassMarks.StudentCourseMarks.resources
+Q:\csharp\programs\Res System\obj\Debug\ResSystem.Updates.res_vac.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.EventScreen.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.OtherResidences.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Updates.ResEvents.ResFunctions.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.StudentLeadership.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.tac.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Year.resources
+Q:\csharp\programs\Res System\obj\Debug\Res_System.Year_Exam.resources
+Q:\csharp\programs\Res System\obj\Debug\Res System.csproj.GenerateResource.Cache
+Q:\csharp\programs\Res System\obj\Debug\RdlCompile.cache
+Q:\csharp\programs\Res System\obj\Debug\RdlCompile.compiled
+Q:\csharp\programs\Res System\obj\Debug\Res System.TrustInfo.xml
+Q:\csharp\programs\Res System\obj\Debug\Res System.exe.manifest
+Q:\csharp\programs\Res System\obj\Debug\Res System.application
+Q:\csharp\programs\Res System\obj\Debug\Res System.exe
+Q:\csharp\programs\Res System\obj\Debug\Res System.pdb
+Q:\csharp\programs\Res System\bin\Debug\Proxy.dll

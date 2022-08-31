@@ -1,0 +1,27 @@
+bin\Debug\Student System.exe.config
+bin\Debug\Student System.exe.manifest
+bin\Debug\Student System.application
+bin\Debug\Student System.exe
+bin\Debug\Student System.pdb
+bin\Debug\AppServer.dll
+bin\Debug\WindowsApplication4.exe
+bin\Debug\ValidateUsers.dll
+bin\Debug\WindowsApplication4.pdb
+bin\Debug\AppServer.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Student_System.Academic_Registration.resources
+obj\Debug\Student_System.Form1.resources
+obj\Debug\Student_System.Properties.Resources.resources
+obj\Debug\Student_System.Student_Search.resources
+obj\Debug\Student_System.StudentAccount.resources
+obj\Debug\Student_System.StudentResults.resources
+obj\Debug\Student_System.StudentsPersonalDetails.resources
+obj\Debug\Student System.csproj.GenerateResource.Cache
+obj\Debug\Student System.TrustInfo.xml
+obj\Debug\Student System.exe.manifest
+obj\Debug\Student System.application
+obj\Debug\Student System.exe
+obj\Debug\Student System.pdb
+bin\Debug\Progress.o4glrt.dll
+bin\Debug\Progress.Messages.dll
+bin\Debug\Progress.ssl.dll

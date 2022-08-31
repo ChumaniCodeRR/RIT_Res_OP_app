@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>3a7abf6e-2ed8-4c45-a4a1-caa205cb165a</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="title">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1.5cm</RightMargin>
+  <LeftMargin>1.5cm</LeftMargin>
+  <BottomMargin>1.5cm</BottomMargin>
+  <rd:ReportID>4772da90-44e9-4027-9c8b-830208724d22</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="crest">
+      <MIMEType>image/bmp</MIMEType>
+      <ImageData>Qk1GbAAAAAAAADYEAAAoAAAAkwAAALQAAAABAAgAAAAAAAAAAAATCwAAEwsAAAABAAAAAQAAAAAA/wEBAf8CAgL/AwMD/wQEBP8FBQX/BgYG/wcHB/8ICAj/CQkJ/woKCv8LCwv/DAwM/w0NDf8ODg7/Dw8P/xAQEP8RERH/EhIS/xMTE/8UFBT/FRUV/xYWFv8XFxf/GBgY/xkZGf8aGhr/Gxsb/xwcHP8dHR3/Hh4e/x8fH/8gICD/ISEh/yIiIv8jIyP/JCQk/yUlJf8mJib/Jycn/ygoKP8pKSn/Kioq/ysrK/8sLCz/LS0t/y4uLv8vLy//MDAw/zExMf8yMjL/MzMz/zQ0NP81NTX/NjY2/zc3N/84ODj/OTk5/zo6Ov87Ozv/PDw8/z09Pf8+Pj7/Pz8//0BAQP9BQUH/QkJC/0NDQ/9ERET/RUVF/0ZGRv9HR0f/SEhI/0lJSf9KSkr/S0tL/0xMTP9NTU3/Tk5O/09PT/9QUFD/UVFR/1JSUv9TU1P/VFRU/1VVVf9WVlb/V1dX/1hYWP9ZWVn/Wlpa/1tbW/9cXFz/XV1d/15eXv9fX1//YGBg/2FhYf9iYmL/Y2Nj/2RkZP9lZWX/ZmZm/2dnZ/9oaGj/aWlp/2pqav9ra2v/bGxs/21tbf9ubm7/b29v/3BwcP9xcXH/cnJy/3Nzc/90dHT/dXV1/3Z2dv93d3f/eHh4/3l5ef96enr/e3t7/3x8fP99fX3/fn5+/39/f/+AgID/gYGB/4KCgv+Dg4P/hISE/4WFhf+Ghob/h4eH/4iIiP+JiYn/ioqK/4uLi/+MjIz/jY2N/46Ojv+Pj4//kJCQ/5GRkf+SkpL/k5OT/5SUlP+VlZX/lpaW/5eXl/+YmJj/mZmZ/5qamv+bm5v/nJyc/52dnf+enp7/n5+f/6CgoP+hoaH/oqKi/6Ojo/+kpKT/paWl/6ampv+np6f/qKio/6mpqf+qqqr/q6ur/6ysrP+tra3/
+rq6u/6+vr/+wsLD/sbGx/7Kysv+zs7P/tLS0/7W1tf+2trb/t7e3/7i4uP+5ubn/urq6/7u7u/+8vLz/vb29/76+vv+/v7//wMDA/8HBwf/CwsL/w8PD/8TExP/FxcX/xsbG/8fHx//IyMj/ycnJ/8rKyv/Ly8v/zMzM/83Nzf/Ozs7/z8/P/9DQ0P/R0dH/0tLS/9PT0//U1NT/1dXV/9bW1v/X19f/2NjY/9nZ2f/a2tr/29vb/9zc3P/d3d3/3t7e/9/f3//g4OD/4eHh/+Li4v/j4+P/5OTk/+Xl5f/m5ub/5+fn/+jo6P/p6en/6urq/+vr6//s7Oz/7e3t/+7u7v/v7+//8PDw//Hx8f/y8vL/8/Pz//T09P/19fX/9vb2//f39//4+Pj/+fn5//r6+v/7+/v//Pz8//39/f/+/v7/////////////////////////////////////////////////////////////////////////////////////////////////////4GEAYN///////////////////////////////////////////////////////////////////////////////////////////////wD////////////////////////////////////////////////////////////////////////////////////////////qeA4AAAAOct////////////////////////////////////////////////////////////////////////////////////////////8A//////////////////////////////////////////////////////////////////////////////////////////iLGQAAAQcBAAASivj////////////////////////////////////////////////////////////
+/////////////////////////////AP///////////////////////////////////////////////////////////////////////////////////////8czAAAAI5vrnSUAAAAxxv///////////////////////////////////////////////////////////////////////////////////////wD/////////////////////////////////////////////////////////////////////////////////////7nsLAAAilu/////xmCIAAAVu7v////////////////////////////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////////////////////////////zysAAAVa5P/////////lXAUAACu9/f//////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////////////////////////////////////////////////////////iwwAACCr/v////////////+4KAAACIX//////////////////////////////////////////////////////////////////////////////////wD////////////////////////////////////////////////////////////////////////////////kWgAAAG/u//////////////////BwAAAATeP///////////////////////////////////////////////////////////////
+////////////////8A///////////////////////////////////////////////////////////////////////////////AIwAAEqb8/////////////////////akTAAAiv///////////////////////////////////////////////////////////////////////////////AP////////////////////////////////////////////////////////////////////////////6dBgAAN9H/////////////////////////0zkAAAab/v///////////////////////////////////////////////////////////////////////////wD///////////////////////////////////////////////////////////////////////////dkAAADa/X////////////////////////////5ggQAAGP3//////////////////////////////////////////////////////////////////////////8A/////////////////////////////////////////////////////////////////////////95CAAAWnPz///////////////////////////////6gFwAAQdn/////////////////////////////////////////////////////////////////////////AP///////////////////////////////////////////////////////////////////////swaAAAeyP///////////////////////////////////8sfAAATyv7//////////////////////////////////////////////////////////////////
+////wD//////////////////////////////////////////////////////////////////////6YOAABJ7//////////////////26///////////////////8UwAAA2U//////////////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////////////+YEEAAZz8v//////////////////24P////////////////////ydQcABH/4////////////////////////////////////////////////////////////////////AP//////////////////////////////////////////////////////////////////9V0CAAaZ/P///////////////////6Uk8/////////////////////ydBgACXPX//////////////////////////////////////////////////////////////////wD/////////////////////////////////////////////////////////////////80MAABu6//////////////////////guAJT//////////////////////70dAABD8/////////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////////4T4AACrY//////////////////////+bAQAe8///////////////////////2iwAADPf////////////////////////////////////////////////////////////////AP//////
+////////////////////////////////////////////////////////4C0AACzf///////////////////////tHQAAAI3////////////////////////hMgAAK9n//////////////////////////////////////////////////////////////wD/////////////////////////////////////////////////////////////zywAAE7o////////////////////////iwAAAAAd6v////////////////////////RSAAASy/////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////xhAAAF73////////////////////////5RkAAAAAAHv/////////////////////////+GAAABDG////////////////////////////////////////////////////////////AP//////////////////////////////////////////////////////////yBIAAGf1/////////////////////////38AAAAAAAAR2v/////////////////////////2awAAEsj//////////////////////////////////////////////////////////wD/////////////////////////////////////////////////////////zBIAAWT6/////////////////////////+cXAAAAAAAAAGr///////////////////////////tnAQASzP////////////////////////////////////////////////////////8A///////////////////
+/////////////////////////////////////yRIAAGv8//////////////////////////5kAAAAAAAAAAAJ1v///////////////////////////W4AABLJ////////////////////////////////////////////////////////AP//////////////////////////////////////////////////////yBMAAGr6///////////////////////////WBAAAAAAAAAAAAGH9///////////////////////////7bAAAE8j//////////////////////////////////////////////////////wD/////////////////////////////////////////////////////0REAAWf6///////////////////////////9WwAAAAAAAAAAAAAI1P////////////////////////////trAQARzv////////////////////////////////////////////////////8A////////////////////////////////////////////////////3SEAAGH7////////////////////////////zQoAAAAAAAAAAAAAAEj7/////////////////////////////WUAABTc////////////////////////////////////////////////////AP//////////////////////////////////////////////////6zMAAGf4/////////////////////////////FAAAAAAAAAAAAAAAAABuP/////////////////////////////5agAAMOT//////////////////////////////////////////////////wD///////////////////////////////
+//////////////////9kgAAFPw/////////////////////////////74JAAAAAAAAAAAAAAAAAD76//////////////////////////////dXAABE9v////////////////////////////////////////////////8A////////////////////////////////////////////////+1cAADX0//////////////////////////////4zAAAAAAAAAAAAAAAAAAAEtP//////////////////////////////9kgAAEn5////////////////////////////////////////////////AP//////////////////////////////////////////////+3gAACXj//////////////////////////////+vAAAAAAAAAAAAAAAAAAAAADH6///////////////////////////////lJwAAdfv//////////////////////////////////////////////wD//////////////////////////////////////////////5cEACLU///////////////////////////////1NAAAAAAAAAAAAAAAAAAAAAAApf///////////////////////////////9gkAASX//////////////////////////////////////////////8A/////////////////////////////////////////////8QIABLO////////////////////////////////pgAAAAAAAAAAAAAAAAAAAAAAACHw////////////////////////////////0RMACMD/////////////////////////////////////////////AP///////////////////////////////////////////
++AeAASc////////////////////////////////8zAAAAAAAAAAAAAAAAAAAAAAAAAAkP////////////////////////////////+gBAAU3////////////////////////////////////////////wD//////////////////////////////////////////+0uAAB//v///////////////////////////////5sCAAAAAAAAAAAAAAAAAAAAAAAAAB7q/////////////////////////////////ocEAC/s//////////////////////////////////////////8A//////////////////////////////////////////1gAABM9P///////////////////////////////+8XAAAAAAAAAAAAAAAAAAAAAAAAAAAAhv/////////////////////////////////6UwAAXvv/////////////////////////////////////////AP////////////////////////////////////////+eBQA17P////////////////////////////////9/AAAAAAAAAAAAAAAAAAAAAAAAAAAAABns/////////////////////////////////+41AACT/////////////////////////////////////////wD////////////////////////////////////////SBgAQz//////////////////////////////////nFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAe/7/////////////////////////////////0hEABsH///////////////////////////////////////8A///////////////////////////////////////qLgADof//////////
+///////////////////////+eQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnc//////////////////////////////////+kAwAk6P//////////////////////////////////////AP//////////////////////////////////////WgAAa/z/////////////////////////////////3hUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYf7//////////////////////////////////W8AAFj//////////////////////////////////////wD/////////////////////////////////////pQAANPD//////////////////////////////////2YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzQ///////////////////////////////////yNgAAnP////////////////////////////////////8A////////////////////////////////////4BYACdf//////////////////////////////////80JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWf3//////////////////////////////////9oKAA/S////////////////////////////////////AP//////////////////////////////////+T8AAYz///////////////////////////////////5WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnK////////////////////////////////////kAEAPvn//////////////////////////////////wD//////////////////////////////////3sAAET6///////////////////////////
+////////KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR/7///////////////////////////////////tUAAB7//////////////////////////////////8A/////////////////////////////////9sQABXZ///////////////////////////////////6TwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2////////////////////////////////////3xYAD9L/////////////////////////////////AP////////////////////////////////xNAACW////////////////////////////////////wQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPPf///////////////////////////////////+aAwBD/P///////////////////////////////wD///////////////////////////////+oBQBC+P//////////////////////////////////+TUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACr////////////////////////////////////+1AABJz///////////////////////////////8A///////////////////////////////qGAAQ0f///////////////////////////////////6MBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANPX////////////////////////////////////UEQAX6v//////////////////////////////AP/////////////////////////////9ZAACg/////////////////////////////////////gqAAAAAA
+AAAAAAAAAAAAAAAA4QDwoAAAAAAAAAAAAAAAAAAAOj/////////////////////////////////////4gCAFb5/////////////////////////////wD/////////////////////////////xQkANPT///////////////////////////////////+iAQAAAAAAAAAAAAAAAAAACJLd4uDQZgAAAAAAAAAAAAAAAAAAGvb////////////////////////////////////2NwAAt/////////////////////////////8A////////////////////////////+DkACbf////////////////////////////////////wJgAAAAAAAAAAAAAAABR4wBj2/////7VF0VYGAAAAAAAAAAAAAACD/////////////////////////////////////80JADf3////////////////////////////AP///////////////////////////5cCAFz8////////////////////////////////////kAAAAAAAAAAAAAAABkrW/+0q4v////+JXf/8syQAAAAAAAAAAAAAGer////////////////////////////////////9YAAClv///////////////////////////wD//////////////////////////+4YABTd////////////////////////////////////5RcAAAAAAAAAAAAAArL8///6LLf/////XYT////mXQAAAAAAAAAAAACC/////////////////////////////////////+AVABft//////////////////////////8A//////////////////////////9/AACE/////////////////////////////////////3sAAAAAAAAAAAAAABLw/////
+2Oa/////0i0/////5IAAAAAAAAAAAAAFuH/////////////////////////////////////iAAAZ/3/////////////////////////AP/////////////////////////UBgAi8P///////////////////////////////////+IRAAAAAAAAAAAAADcrYv3///+Lgf////0m2////+YcSgkAAAAAAAAAAABv//////////////////////////////////////I0AATR/////////////////////////wD////////////////////////9WAACrP////////////////////////////////////5xAAAAAAAAAAAAABDT1w3N////xVf////wNPT///5mNfOMAAAAAAAAAAAACdP/////////////////////////////////////sQIAVv3///////////////////////8A////////////////////////zAgAQPj////////////////////////////////////iDQAAAAAAAAAAAACE//+UO/f//+ZR/v//5F7////BINr/9S4AAAAAAAAAAABd/v////////////////////////////////////lDAAi8////////////////////////AP///////////////////////1EAALz////////////////////////////////////9aAAAAAAAAAAAAAAe8P//90mf///96P////fJ///6QpP///+vAgAAAAAAAAAAAs//////////////////////////////////////wQkAPfn//////////////////////wD//////////////////////60EAFb7////////////////////////////////////yQYAAAAAAAAAAAAAT/7////WkP//////////////
+7Xf4////7QsAAAAAAAAAAABU+/////////////////////////////////////1fAAKn//////////////////////8A//////////////////////0oAAfS/////////////////////////////////////UwAAAAAAAAAAAAAAI////////////////////////////////8xAAAAAAAAAAAACMn/////////////////////////////////////1ggAKP3/////////////////////AP////////////////////+pAABl/////////////////////////////////////8AHAAAAAAAAAAAAAAAAV8f8////////////////////////96kwAAAAAAAAAAAAAABJ+/////////////////////////////////////9pAACm/////////////////////wD////////////////////1MwAP1P////////////////////////////////////xEAAAAAAAAAAAAAAAAAAAJUc/+///////////////////8pzQEAAAAAAAAAAAAAAAAA6z/////////////////////////////////////2BAAMfX///////////////////8A////////////////////qQAAY/7///////////////////////////////////+8AQAAAAAAAAAAAAAAAAAAAAALmvX////////////////ubAAAAAAAAAAAAAAAAAAAAAAu+/////////////////////////////////////5nAACo////////////////////AP//////////////////9zIADdv////////////////////////////////////1OgAAAAAAAAAAAAAAAAAAAAAAAAdx+//////////////ZKQAAAAAAAAA
+AAAAAAAAAAAAAAaf/////////////////////////////////////3w4AMPb//////////////////wD//////////////////6ACAGf+////////////////////////////////////oQAAAAAAAAAAAAAAAAAAAAAAADYhAVv1///////////eJAQ6HgAAAAAAAAAAAAAAAAAAAAAu8v////////////////////////////////////5rAAGg//////////////////8A//////////////////wlAAbd////////////////////////////////////8iwAAAAAAAAAAAAAAAAAAAAAAAXi7H8XUvD////////DJTK0+ZcBAAAAAAAAAAAAAAAAAAAAAJ7/////////////////////////////////////4QYAJfz/////////////////AP////////////////+rAgBi/////////////////////////////////////5YAAAAAAAAAAAAAAAAAAAAAAAA+///+uBU/9P/////AD0rz///dDQAAAAAAAAAAAAAAAAAAAAAm6f////////////////////////////////////9mAAGp/////////////////wD////////////////4MgAM1f////////////////////////////////////EiAAAAAAAAAAAAAAAAAAAAAAAAN/Hx8fFQAHH////xKQCZ8fHxvgUAAAAAAAAAAAAAAAAAAAAAAIH/////////////////////////////////////2Q0AMPf///////////////8A////////////////rwAAYP7///////////////////////////////////+QAQAAAAAAAAAAAAAAAAAAAAAAAAccHBwcCwAI4v//lQIAFBwcHBUAAAAAAAAAAAAAAAAAAA
+AAAAAU6P////////////////////////////////////5kAACt////////////////AP//////////////+TsAC9H////////////////////////////////////qEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEdxciEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHj+////////////////////////////////////1QwAOPj//////////////wD//////////////8MAAFv9///////////////////////////////////+bgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ4/////////////////////////////////////1fAACt//////////////8A//////////////9YAADS////////////////////////////////////2xIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHH9////////////////////////////////////1wYAU///////////////AP/////////////TCAA6/P///////////////////////////////////20AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ0P////////////////////////////////////1HAAjS/////////////wD////////////+YQADs////////////////////////////////////9UNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFD+/
+///////////////////////////////////uAQAXv7///////////8A////////////7wQAM/n///////////////////////////////////9aAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANoz+OzOwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIxv////////////////////////////////////s2AATb////////////AP///////////4oAAKH////////////////////////////////////HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOm+//+/+1UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE3+////////////////////////////////////pwIAgf///////////wD//////////+4fABrq///////////////////////////////////7SwAAAAAAAAAAV5OQkpSWmJqcnqCho6Slq7Ozs7PA/ft9Ubr/7rOzs7OzpqWkoqGfnZuZl5WTkZGSEwAAAAAAAAAAw/////////////////////////////////////IiAB7u//////////8A//////////+2AACB////////////////////////////////////uwIAAAAAAAAAALX///////////////////////////5mAAAFwP///////////////////////////0gAAAAAAAAAAEH2////////////////////////////////////hgAAmf//////////AP/////////8QQAF2///////////////////////////////////+UIAAAAAAAAAAACx/8mEhISEhIR2dnVzcnBubGpoZmRdCQAAACRrZWdpa21vcXJ0dXZ7hISEhISL8/8jAAAAAAAAAAAAp///////////
+/////////////////////////+MTAD78/////////wD/////////1wwAUvz//////////////////////////////////7YFAAAAAAAAAAAAsf+LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADOP/IwAAAAAAAAAAADH2///////////////////////////////////9VgAFy/////////8A/////////24AAa////////////////////////////////////kkAAAAAAAAAAAAALH/iwAAACIwODw0JwkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAopNTw4LyIAAAzj/yMAAAAAAAAAAAAAm////////////////////////////////////8IDAGz/////////AP////////oeACX5//////////////////////////////////+YAQAAAAAAAAAAAACx/4sAAKDx9/v8+fPnzJhhIQoAAAACHYuThR0CAAAACyJmn8/n9Pn8+vfxjwAM4/8jAAAAAAAAAAAAACb0///////////////////////////////////7JwAK+f///////wD////////BAQB4///////////////////////////////////yIwAAAAAAAAAAAAAAsf+LAAC0//////////////jWsZmEtvL/tP/xsISbutb4/////////////6AADOP/IwAAAAAAAAAAAAABmf///////////////////////////////////40AAa////////8A////////bAAGx///////////////////////////////////kwAAAAAAAAAAAAAAALH/iwAAtP///////////////////////7X///////////////////////+eAAzj/yMAAAAAAAAAAAAAACLu///////////////////
+////////////////VDQBZ////////AP//////7xUAKvn/////////////////////////////////6SEAAAAAAAAAAAAAAACx/4sAALL///////////////////////+3////////////////////////nAAM4/8jAAAAAAAAAAAAAAAAeP//////////////////////////////////+z0AFO7//////wD//////7AAAHj//////////////////////////////////4kAAAAAAAAAAAAAAAAAsf+LAACm////////////////////////uv///////////////////////5oADOP/IwAAAAAAAAAAAAAAABXg//////////////////////////////////+MAACv//////8A//////9XAADO/////////////////////////////////+AaAAAAAAAAAAAAAAAAALH/iwAApf///////////////////////73///////////////////////+YAAzj/yMAAAAAAAAAAAAAAAAAdP//////////////////////////////////1woAWf//////AP/////6JwAq9f////////////////////////////////9sAAAAAAAAAAAAAAAAAACx/4sAAKT////////////////////////A////////////////////////lgAM4/8jAAAAAAAAAAAAAAAAAA7b//////////////////////////////////YsACHz/////wD/////zQQAcP/////////////////////////////////fCQAAAAAAAAAAAAAAAAAAsf+LAACj////////////////////////xP///////////////////////5QADOP/IwAAAAAAAAAAAAAAAAAAav7///////////////////////////
+//////dAADzP////8A/////5IAAKr////////////////////////////////9ZAAAAAAAAAAAAAAAAAAAALH/iwAAof///////////////////////8f///////////////////////+SAAzj/yMAAAAAAAAAAAAAAAAAAAvO/////////////////////////////////64AAI//////AP////9XAADr////////////////////////////////0wwAAAAAAAAAAAAAAAAAAACx/4sAAKD////////////////////////L////////////////////////kAAM4/8jAAAAAAAAAAAAAAAAAAAAT/z////////////////////////////////vCwBU/////wD////6FAA3/f///////////////////////////////V0AAAAAAAAAAAAAAAAAAAAAsf+LAACe////////////////////////z////////////////////////44ADOP/IwAAAAAAAAAAAAAAAAAAAATC/////////////////////////////////kAAFPr///8A////ywUAcf///////////////////////////////74GAAAAAAAAAAAAAAAAAAAAALH/iwAAnP///////////////////////9L///////////////////////+MAAzj/yMAAAAAAAAAAAAAAAAAAAAAR/v///////////////////////////////+FAAXJ////AP///6YAAKn///////////////////////////////08AAAAAAAAAAAAAAAAAAAAAACx/4sAAJr////////////////////////U////////////////////////igAM4/8jAAAAAAAAAAAAAAAAAAAAAAa6////////////////////////////////rQAAm
+v///wD///9pAAze//////////////////////////////+3AgAAAAAAAAAAAAAAAAAAAAAAsf+LAACY////////////////////////1////////////////////////4gADOP/IwAAAAAAAAAAAAAAAAAAAAAAPfv//////////////////////////////+ENAGf///8A///9RAAX9f/////////////////////////////4PgAAAAAAAAAAAAAAAAAAAAAAALH/iwAAlv///////////////////////9n///////////////////////+GAAzj/yMAAAAAAAAAAAAAAAAAAAAAAAGi///////////////////////////////4GQA5+///AP//9A0AT///////////////////////////////rgAAAAAAAAAAAAAAAAAAAAAAAACx/4sAAJT////////////////////////n////////////////////////hAAM4/8jAAAAAAAAAAAAAAAAAAAAAAAAJ/P//////////////////////////////1MADPT//wD//9wAAHb/////////////////////////////8DMAAAAAAAAAAAAAAAAAAAAAAAAAsf+LAACR////////////////////////6P///////////////////////4IADOP/IwAAAAAAAAAAAAAAAAAAAAAAAACZ//////////////////////////////96AADa//8A//+cAACu/////////////////////////////5IAAAAAAAAAAAAAAAAAAAAAAAAAALH/iwAAkP///////////////////////+j///////////////////////9sAAzj/yMAAAAAAAAAAAAAAAAAAAAAAAAAJ+3/////////////////////////////sgAAm///AP//iQAA
+xv////////////////////////////MfAAAAAAAAAAAAAAAAAAAAAAAAAACx/4sAAI3////////////////////////o////////////////////////VgAM4/8jAAAAAAAAAAAAAAAAAAAAAAAAAACQ/////////////////////////////8sAAIj//wD//10AEuL///////////////////////////+GAAAAAAAAAAAAAAAAAAAAAAAAAAAAsf+LAACL////////////////////////5////////////////////////1YADOP/IwAAAAAAAAAAAAAAAAAAAAAAAAAAHeT////////////////////////////sHABb//8A//83ACX0///////////////////////////sGgAAAAAAAAAAAAAAAAAAAAAAAAAAALH/iwAAif///////////////////////9////////////////////////9WAAzj/yMAAAAAAAAAAAAAAAAAAAAAAAAAAABz/v//////////////////////////9igANP3/AP/zJgBD/f//////////////////////////hQAAAAAAAAAAAAAAAAAAAAAAAAAAAABpl1MAAIf////////////////////////X////////////////////////VgAHh5cVAAAAAAAAAAAAAAAAAAAAAAAAAAAADeX///////////////////////////5FACHv/wD/3gkAbP//////////////////////////2w4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACF////////////////////////1P///////////////////////1YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABo/v//////////////////////////cQAJ3v8A/9gAAIL////////////
+//////////////mMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg////////////////////////8////////////////////////9WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9b//////////////////////////4YAANH/AP+5AACj/////////////////////////9MMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIH////////////////////////H////////////////////////VQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABl/v////////////////////////+3AACw/wD/mQAAyP////////////////////////9fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABi///68e/7////////////////v/////////////////zw8vr//kkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADND/////////////////////////zQAAh/8A/3oAANn////////////////////////RAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwkJCQgICS1pxvz/////////+pj8//////////uxZxkJCAgJCQkDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABC/v///////////////////////94AAHr/AP9pAATq///////////////////////7WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo3i9bw/PjomDwHVaro+fvw04c0AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAb/////////////////////////tBABc/wD/OwAp9///////////////////////vA
+kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHzoyEgAAAAAAEjM5HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABF+v//////////////////////+CsAOf8A/xwAMfn/////////////////////+TwAAAAAAAAAAAAAAAAAAAAAAAAJMTY1LQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcwNjYsAAAAAAAAAAAAAAAAAAAAAAAAALP///////////////////////o1ABz/AP8cAD37/////////////////////64DAAAAAAAAAAAAAAAAAAAABTYIxfj6+faXGzQDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADNwqw9/r69b4WOQUAAAAAAAAAAAAAAAAAAAA89v/////////////////////8QQAc/wD+GwBF/f////////////////////kzAAAAAAAAAAAAAAAAAAAAILj0OsH/////k2n2iBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZqvVJqv////+qVfeXGwAAAAAAAAAAAAAAAAAABJ7//////////////////////kkAF/YA5xIATP////////////////////+pAgAAAAAAAAAAAAAAAAAKf+///2OU/////2yX///nUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARy6v//en3/////g4D//+1iAAAAAAAAAAAAAAAAAAAi9v////////////////////9tABHkAOAPAHz////////////////////0LwAAAAAAAAAAAAAAA
+AAAbf7///+Me/////9Asf////lJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABW/v///6Fl/////1ih////+08AAAAAAAAAAAAAAAAAAY//////////////////////gwAO3gDOCACI////////////////////jQAAAAAAAAAAAAAAAAAAKi3w////t0z////4Md3////WHSsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoG+v////HOf////s52////+IjMAAAAAAAAAAAAAAAAAAe7v///////////////////40AAsIAvAAAk///////////////////6RwAAAAAAAAAAAAAAAAAGd0oev///+g6+///7zT7///+WkPFDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARzDRj/v//7Tf4///2PPn///9wLtQSAAAAAAAAAAAAAAAAAIz///////////////////+YAAC8ALwAAJj//////////////////4QAAAAAAAAAAAAAAAAABJz/xxfa///+Tfb//+dq////rinj/nsBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABl//ZE83///9U7///71n////AJdX/iAAAAAAAAAAAAAAAAAAc5f//////////////////nQAAvAC8AACd/////////////////+YZAAAAAAAAAAAAAAAAADz3//+TXPz//7H5///owv//8De6///uHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKPr//6hN9///tvT///Gy///4Q6b//+4vAAAAAAAAAAAAAAAAAGz//////////////////6IAALwAvAAAov////////////////96AAAAAAAAAAAAAAAAAACN////+VTq////
+/////////8Nv/////1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHb/////Ydb/////////////2lv8////bwAAAAAAAAAAAAAAAAAM2v////////////////+mAAC8ALwAAKb////////////////bEQAAAAAAAAAAAAAAAAAAx/////////////////////////////+kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACw/////////////////////////////7sAAAAAAAAAAAAAAAAAAGT/////////////////qQAAngCiAACp///////////////9XwAAAAAAAAAAAAAAAAAAADGn9f///////////////////////t+NFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ57w///////////////////////+5IcfAAAAAAAAAAAAAAAAAAAG2P///////////////7IBAJkAmQAArf//////////////0gkAAAAAAAAAAAAAAAAAAAAAATaa/P//////////////////8oAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALYz7///////////////////2kBkAAAAAAAAAAAAAAAAAAAAAAF38///////////////WBgCUAJYABtX//////////////VQAAAAAAAAAAAAAAAAAAAAAAAAAAD7j////////////////0SQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMNn////////////////bNgAAAAAAAAAAAAAAAAAAAAAAAAALwf//////////////2AYAkQCTAAbW/////////////8cKAAAAAAAAAAAAAAAAAAAAAAAAAAAAH9P////////////9qQk
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYwv////////////6+CwAAAAAAAAAAAAAAAAAAAAAAAAAAAEL7/////////////9kGAI8AkQAG2P////////////1QAAAAAAAAAAAAAAAAAAAAAAAAAAADPwoUs///////////pAUGPR4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA06BQ+g//////////+4CQlFDgAAAAAAAAAAAAAAAAAAAAAAAAAFtv/////////////bBwCNAJAABtn///////////+0AgAAAAAAAAAAAAAAAAAAAAAAAAAAV//bVB+2///////+kwE8wP+BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACe/70sFKr9//////+jCEfS/mwAAAAAAAAAAAAAAAAAAAAAAAAAADf8////////////3QcAjACOAAbb///////////3MwAAAAAAAAAAAAAAAAAAAAAAAAAAAIH///llA77/////jQI+9f//uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzP//6S8Cp/////+kA1P2//+KAAAAAAAAAAAAAAAAAAAAAAAAAAACrv///////////98HAIEAjAAH3f//////////qgAAAAAAAAAAAAAAAAAAAAAAAAAAAABs4+PjsgAy8v//1BAAgePj46AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKvj4+NyACTq///jGQCh4+PjewAAAAAAAAAAAAAAAAAAAAAAAAAAADf2///////////hBwBeAIwAB9//////////9TQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJv//2sAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhf//ggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl///////////4wgAXgBeAAfi/////////54AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB7s/////////+YIAF4AXgAI5f////////MrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi//////////qCQBeAF4ACOj///////+MAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzt////////7QkAXgBeAAns///////uFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/////////AKAF4AXgAJ7//////+ewAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXp///////0CgBeAF4ABF1gYGBgWQoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQGBgYGBgXgQAXgBRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAXgABHh8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHxsYHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fAQBcAF4ACubu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7r6e7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u6QoAXgBeAAr2////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////oLAF4AXgAK9v////////////////////////fv6e/5/////////////////////////////O7o49/CyP7/////////////////////0Lm4trS3/f///////////////MK3t7e3t/X/////////////////////////////++/r7/L////////////////////////6CwBeAF4ACvb///////////////////////12FRMVov7//////////////////////////+cmExAPAwaV/P///////////////////2YAAAAAAnT1//////////////ctAAAAAACU/////////////////////////////6sVFBVO9///////////////////////+gsAXgBeAAr2//////////7+///////++MJnCAAAABBp0/j////////+///////////////qFwAAAAAABmz4//////////////////+iAQABBQEAOLX8///////////+dwIBCAIAG9////////////////3////////6130VAAAABUii7f3////////9//////////oLAF4AXgAK9v////////+nZdHw9eizeyAAABgPABwLAAAed8Tp9O7RaL///////////////6ozMoh2CwAASd7/////////////////+ntIrdtWAAAATrX2//////////q0rO5tAABn/////////////9JVwOz16saLMwAACxwACycAAApdnd/z8+OMc//////////6CwBeAF4ACvb/////////4ScIDxANAwAAABTPQgBytwAAAAAGDRAPCUHx////////////////+fn//rkVAAAftvz//////////////////v//7DEAAAADMZ/0///
+/////////8yQABcD////////////4TAUOEA4GAAAAAKh9ACbhNwAAAAALEBAMCb3/////////+gsAXgBeAAr2///////////VPwoAAAAAAABc/kMAc/otAAAAAAAACkXm////////////////////////xhUAAAZp7v/////////////////////dHwAAAAACZ/7///////////98AAA/9////////////+xhCgAAAAAAACT5fwAm84oAAAAAAAAFI6n+//////////oLAF4AXgAK9v////////////6LAAAAAAAAZv5CAHL8OQAAAAAAAav////////////////////////////KFAAAACaY8v/////////////////u4D8AAAAMivH//////////vfzpQAAAKf//////////////7QBAAAAAAAu+34AJfOOAAAAAAAATfz////////////6CwBeAF4ACvb///////////dzFwAAAAAWJRLcQgBwzwIvGQAAAAAVlfr//////////////////////////9MvAAAAASCl///////////////qJAYAAAAs5f////////jCajwSCAUAAAAc5////////////ZsWAAAAAAkxAsJ9ACTuRRwnAAAAAARQ5v//////////+gsAXgBeAAr2//////////16AAAAAABF4vE7iUEAb39e9uAnAAAAAAWU////////////////////////////3xoAAAAAB6Po193v9Pn+////zAQAAAAAdP//////+bo/BQAAAAAAAAAAAIH//////////64GAAAAAB7N+m5gfAAkxRzb84cAAAAAAEzy//////////oLAF4AXgAK9v////////+/BwAAAAAAg///6/FAAG7v9///ewAAAAAAFNT///////////////////////////+2AAAAAABZMAALIikzQI3u//xeAAAAABCt////5mAAAAAAAAAAAA
+AADkiz/////////+oZAAAAAABH/v/643sAI/Lg///TAAAAAAAAiP/////////6CwBeAF4ACvb////////vKS4mAAAAAH/////9QABt/////20AAAAAPCpE+f////////////////////////L3ewAAAAAADAUAAAAAAAAAE33b7CQAAAAAAGHyrA0AAAAAAAAAAApXrfn///////////tNGToAAAAARP7///96ACPy////zgAAAAAKRwvS////////+gsAXgBeAAr2///////6YETjKwAAAABd/v///T8AbP////gyAAAAAETeImr9///////////////////4kkoZyBcAAAAAAAAAAAAAAAAAAAAAGZW5EQAAAABBeAsAAAAAAAAAAC24/P////////////6UGdleAAAAACr1////eQAi8v///5wAAAAABM5yJ+X///////oLAF4AXgAK9v/////7exXQkwAAACZEH/L///s9AGj+///hAFYQAAAGvLoOoP7////////////////1SgEANJQAAAAAAAAAAAAAAAAAAAAAAAACRJdSBxZsVwAAAAAAAAAAACDb//////////////+oDqXJBwAAD1oC1f///ncAIe////9fJUABAABg8jA37f/////6CwBeAF4ACvb/////2Di+9TYAAAS46xnN/9dmCwAIadz/syX6nQAAAFD7p0b1///////////////xUAAAAGxPAAAAAAAAAAAAAAAAAAAAAAAAAAAAKkI9FQAAAAAAAAAAAACZ///////////////7SpL8agAAAIH8PJj/7IAYAABCuPz1JbXyGAAAE9rcPZz/////+gsAXgBeAAr2//////76/8ACAAAS5P+K12YMAAAAAAAKbs+e/8cAAAAN3f/6///////////////4QAAAAACaPgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR3f///////////////
+/r+7REAAAC6/6y9ixwAAAAAAAVC1373/jcAAACB//v+//////oLAF4AXgAK9v////////9nAAAAFev//GYAAAAAAAAAAACJ/v/SAAAAAIz////////////////3WQIAAAAAnzYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIej//////////////////6ICAAAAxP/+mQYAAAAAAAAAADPw//9RAAAAL/j////////6CwBeAF4ACvb////////7IgAAABXr/+UVAAAAAAAAAAAAIvr/0gAAAABF/f/////////////5WwAAAAAAAJk1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfqv7///////////////5cAAAAAMX//jkAAAAAAAAAAAAAuP//UQAAAAzf////////+gsAXgBeAAr2////////1w4FAAAN1f/OAAAAAAAAAAAAABHv/7AAAAALEvD////////////sZQEAAD+FVQeROAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRqpcjAl4pIBgJ68v/////////////4JgsAAACl//gTAAAAAAAAAAAAAKf/9SwAAAAAkP////////oLAF4AXgAK9v//////91xPKQAAAHf/3g4AAAAAAAAAAAAY9v5FAAAAUDd8/P/////////dOgAAIp31//7NrU0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQXW8Lx/v//////+sAgAGz+///////////9lCRSAAAAPfz8LAAAAAAAAAAAAACw/7QDAAAVdSjp///////6CwBeAF4ACvb//////I1E7i8AAAAl9PktAAAAAAAAAAAAVv/ZDwAAAF7jMKH///////7MIgAAP+H///////+hAAAAAAAAAAAAAAAAAAAAAAAAGDA+VnnD8///////////////0AUN0///////////wSbXagAAAA3Q
+/2IAAAAAAAAAAAAK2f9ZAAAAGud6Rvf/////+gsAXgBeAAr2///////1+/9OAAl8EXz/hAAAAAAAAAAAAJn/Zih+AABm//X7///////9KQAAS/n/////////74tGCgAAAAAAAAAAUZbd7+/v7/P+//////////////////////9OAIb///////////v1/4wAAGosPv+1AAAAAAAAAAAAOvjMC4MgAB7u/+////////oLAF4AXgAK9v//////////bQAv+Kw09uMMAAAAAAAAACnu7RvG9hcAif///////////SkAJeL//////////////MMwAAAAAAAAAAAAif////////////zw7/P4+vz+///////6JACF//////////////+qAADr0yHi9DAAAAAAAAAAAKz+ZoL8cgAn9v/////////6CwBeAF4ACvb//////////7QANv3+yv3/qz0+PiJAPTzN//zZ/v0uCcv///////////0pAHz/////////////////5jwAAAAAAAAAAIj/////////+K1EIiAnLmFpZ3GGpceqRAE+6v//////////////1AsA9v/U+v/TPD1AJT09PIb8/9r0/4MAY///////////+gsAXgBeAAr2///////////qDDj+////6jguakwclUcscvz////9MiT2///////////9KQBJ+////////////7qX+v+CAAAAAAAAAACX////////91AAAAg2ODQaAAAAAAAAAABO5v////////////////s3APn////9fCwwnCBGWy1L8v////+JALT///////////oLAF4AXgAK9v///////////U40+////4sAAD0AAFciAAza////+RVy/////////////SkAXv3///////////4uBEZJJAAAAAAAAAAAx////////3QCMMnr+vr58+rZz76Zhoq8+///////////////////iADy////7BwAEVkAAC0
+AAKj/////dRvv///////////6CwBeAF4ACvb///////////+8Fd////92AABlAABfOAAAwv///74E0v////////////19auP///////////r6eDMFAAAAAAAAAAAAAMb///////4mB8P//////////////////////////////////////+YVtP///9EEAC1pAAA/AACG////+C9v/v//////////+gsAXgBeAAr2/////////////VaE///7PgAAmAAAY3UAAJT///1mdv3//////////////////////////pc5OVGVJgAAAAAAAAAAAACa///////5ChLk//////////+9isr4///////////////////////+kFz8//+tAABdcQAAegAAWP///80s8f////////////oLAF4AXgAK9v/////////////1iv//3A4AFLoAAGOdAABR/v/2jPz//////////////////////////58ML3IwAAAAAAAAAAAAAAAAvP///////0IBbv////////R5CgAOpfr+/v////////////////////yW7P//XQAAknEAAJwHACPw//+e3f/////////////6CwBeAF4ACvb///////////////z//++9tMXsqZfG+Lm3y/3//vz//////////////////////////+YRlPb5XQAAAAAAAAAAAAAAF+7///////+QAwd/2/fsz4UvAAAABx4jJUFn6v///////////////////P7//8y4tPbLmKjlxrXC9////P//////////////+gsAXgBeAAr2//////////////////////////////////////////////////////////////////+sJvL/6BAAAAAAAAAAAAAAAHX//////////IMAAAcuGAAAAAAAFj04GwAAL97///////////////////////////////////////////////
+////////////oLAF4AXgAK9v//////////////////////////////////////////////////////////////////26z///+iPz4zBQAAAAAACJH////////////+qEcEDik3V4zC7P7///FWcvb////////////////////////////////////////////////////////////6CwBeAF4ACvb///////////////////////////////////////////////////////////////////////////79+IwHAAATUrn9///////////////63Of0+v7//////////Pz/////////////////////////////////////////////////////////////+gsAXgBeAAr2///////////////////////////////////////////////////////////////////////////////90cDC4/7///////////////////////////////////////////////////////////////////////////////////////////////////oLAF4AXgAK9v/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6CwBeAF4ACvb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+
+gsAXgBeAAr2//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oLAF4AXgAK9v/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6CwBeAF4AA0FDQ0NCQkJCQkJBQUFBQUFBQUBAQEBAQEBAQEA/Pz8/Pz4+Pj4+Pj4+Pj4+PT09PT09PT09PDw8PDw8PDs7Ozs7Ozs7OzsoOzs7Ozs7Ozs7Ozw8PDw8PDw9PT09PT09PT09Pj4+Pj4+Pj4+Pj8/Pz8/P0BAQEBAQEBAQEFBQUFBQUFBQkJCQkJCQ0NDQgMAXgBSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAex0uLi4uLi4uLi4uLi4uLi4uLi8vLy8vLy8vLy8vLy8vLzAwMDAwMDAwMDExMTExMTExMTIyMjIyMjIyMjIyMzMzMzMzMzMzMyA0MzMzMzMzMzMzMjIyMjIyMjIyMjIxMTExMTExMTEwMDAwMDAwMDAvLy8vLy8vLy8vLy8vLy8uLi4uLi4uLi4uLi4uLi4uLhx7AA==</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="rulogo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DS_STUBADDataSet_tt_stubad">
+      <Fields>
+        <Field Name="refno">
+          <DataField>refno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bad_dte">
+          <DataField>bad_dte</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="stuno">
+          <DataField>stuno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="trial_dte">
+          <DataField>trial_dte</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RESNAME">
+          <DataField>RESNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HALLNAME">
+          <DataField>HALLNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BAD_CATEGORY">
+          <DataField>BAD_CATEGORY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="category_descrip">
+          <DataField>category_descrip</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="guilty_by">
+          <DataField>guilty_by</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="guilty_of_text">
+          <DataField>guilty_of_text</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="penalty_text">
+          <DataField>penalty_text</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="serv_hrs">
+          <DataField>serv_hrs</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="comm_serv_by">
+          <DataField>comm_serv_by</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="compulsory_place">
+          <DataField>compulsory_place</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pen_compl">
+          <DataField>pen_compl</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="add_amt">
+          <DataField>add_amt</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="fine_amt">
+          <DataField>fine_amt</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="pay_by">
+          <DataField>pay_by</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="exam_ban">
+          <DataField>exam_ban</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="res">
+          <DataField>res</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="hall">
+          <DataField>hall</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="saved">
+          <DataField>saved</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="name1">
+          <DataField>name1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="surn">
+          <DataField>surn</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="titl">
+          <DataField>titl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bad_descrip1">
+          <DataField>bad_descrip1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bad_descrip2">
+          <DataField>bad_descrip2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_cat1">
+          <DataField>offence_cat1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_cat2">
+          <DataField>offence_cat2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_dte1">
+          <DataField>offence_dte1</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="offence_dte2">
+          <DataField>offence_dte2</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="offence_location1">
+          <DataField>offence_location1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_location2">
+          <DataField>offence_location2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_particulars1">
+          <DataField>offence_particulars1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_particulars2">
+          <DataField>offence_particulars2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_time1">
+          <DataField>offence_time1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="offence_time2">
+          <DataField>offence_time2</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="tempcapture">
+          <DataField>tempcapture</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="aog_no1">
+          <DataField>aog_no1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="aog_no2">
+          <DataField>aog_no2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="complete_dte1">
+          <DataField>complete_dte1</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="complete_dte2">
+          <DataField>complete_dte2</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="comp_place1">
+          <DataField>comp_place1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="comp_place2">
+          <DataField>comp_place2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="comp_hours1">
+          <DataField>comp_hours1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="comp_hours2">
+          <DataField>comp_hours2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="comp_report_dte1">
+          <DataField>comp_report_dte1</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="comp_report_dte2">
+          <DataField>comp_report_dte2</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="exclusion">
+          <DataField>exclusion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="excl_period">
+          <DataField>excl_period</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fine_amt_suspended">
+          <DataField>fine_amt_suspended</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="fine_amt_total">
+          <DataField>fine_amt_total</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="fine_notify_dte">
+          <DataField>fine_notify_dte</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="fine_suspension_period">
+          <DataField>fine_suspension_period</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="guilty_by_from">
+          <DataField>guilty_by_from</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="guilty_by_position">
+          <DataField>guilty_by_position</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="level">
+          <DataField>level</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="other_sanctions">
+          <DataField>other_sanctions</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="other_source_code1">
+          <DataField>other_source_code1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="other_source_code2">
+          <DataField>other_source_code2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="other_source_type1">
+          <DataField>other_source_type1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="other_source_type2">
+          <DataField>other_source_type2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sdc_no1">
+          <DataField>sdc_no1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sdc_no2">
+          <DataField>sdc_no2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="serv_hrs_suspended">
+          <DataField>serv_hrs_suspended</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="serv_suspension_period">
+          <DataField>serv_suspension_period</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="stage">
+          <DataField>stage</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="add_fine_by">
+          <DataField>add_fine_by</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="summons_notify_dte">
+          <DataField>summons_notify_dte</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="supervisor1">
+          <DataField>supervisor1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="supervisor2">
+          <DataField>supervisor2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="trial_location">
+          <DataField>trial_location</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="trial_time">
+          <DataField>trial_time</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="trial_type">
+          <DataField>trial_type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="verdict1">
+          <DataField>verdict1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="verdict2">
+          <DataField>verdict2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="hearing_txt">
+          <DataField>hearing_txt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="summons_txt">
+          <DataField>summons_txt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="offence_txt">
+          <DataField>offence_txt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="authority_txt">
+          <DataField>authority_txt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="penalty_txt">
+          <DataField>penalty_txt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DS_STUBADDataSet</rd:DataSetName>
+        <rd:TableName>tt_stubad</rd:TableName>
+        <rd:ObjectDataSourceType>NS_ResSystem.StrongTypesNS.DS_STUBADDataSet, PN_ResSystem, Version=10.0.1.50000, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceSelectMethod>tt_stubad</rd:ObjectDataSourceSelectMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>17.75cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="list1">
+        <DataSetName>DS_STUBADDataSet_tt_stubad</DataSetName>
+        <ReportItems>
+          <Rectangle Name="rectangle4">
+            <Left>0.25cm</Left>
+            <ZIndex>24</ZIndex>
+            <ReportItems>
+              <Textbox Name="textbox14">
+                <Top>0.05291cm</Top>
+                <Width>12.5cm</Width>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>1</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.02646cm</Left>
+                <Height>1.25cm</Height>
+                <Value>=Fields!authority_txt.Value</Value>
+              </Textbox>
+              <Textbox Name="textbox12">
+                <Top>0.05291cm</Top>
+                <Width>4cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>700</FontWeight>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <CanGrow>true</CanGrow>
+                <Left>13.07936cm</Left>
+                <Height>1.25cm</Height>
+                <Value>Signature:
+
+_____________________</Value>
+              </Textbox>
+            </ReportItems>
+            <Top>9cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <Height>1.40873cm</Height>
+          </Rectangle>
+          <Textbox Name="textbox13">
+            <Top>7.57937cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontSize>9pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>23</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.68519cm</Height>
+            <Value>=Fields!penalty_txt.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <Top>4.72354cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontSize>9pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>22</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.68519cm</Height>
+            <Value>=Fields!hearing_txt.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox20">
+            <Top>0.05291cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>21</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.40873cm</Left>
+            <Height>0.62cm</Height>
+            <Value>Rhodes University</Value>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <Top>2.5cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>20</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Student:</Value>
+          </Textbox>
+          <Textbox Name="textbox19">
+            <Top>6.89418cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <FontStyle>Italic</FontStyle>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>19</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>The sanction(s) imposed was/were as follows:</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <Top>14.88227cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>18</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Value>I, ________________________________  confirm that I received a copy of this notification at (time) __________ 
+
+on the (date) ______________________                      Accused students Signature: _______________________</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <Top>14.13227cm</Top>
+            <Width>16.75cm</Width>
+            <Style>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Acknowledgment of Receipt by Student</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <Top>11.25cm</Top>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>2.82936cm</Height>
+            <Value>1. Admission of Guilt: Should you wish to dispute this disciplinary offence or argue that a lower sentence should be imposed, please inform this Disciplinary Authority by no later than three (3) days after receiving this notification, after which a hearing will be scheduled.
+2. Failure to pay the fine/compensatory payment/complete compulsory service by the due date is a serious disciplinary offence which will result in further disciplinary action being taken which may, in addition to other sanctions, lead to exclusion from the Hall, and an order that your Academic Transcript and June and/or November examination results be withheld. 
+3. Review rights have been explained.
+4. SDC means "Student Disciplinary Code".</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <Top>10.5cm</Top>
+            <Width>16.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Important information for students</Value>
+          </Textbox>
+          <Textbox Name="textbox15">
+            <Top>8.30291cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <FontStyle>Italic</FontStyle>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Disciplinary Authority Issuing Summons:</Value>
+          </Textbox>
+          <Textbox Name="textbox42">
+            <Top>5.47354cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <FontStyle>Italic</FontStyle>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>of the following disciplinary offence:</Value>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <rd:DefaultName>textbox4</rd:DefaultName>
+            <Top>4.05291cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <FontStyle>Italic</FontStyle>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>I confirm that you were found guilty / admitted guilt at the under mentioned hearing:</Value>
+          </Textbox>
+          <Textbox Name="textbox40">
+            <Top>1cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Right</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Date of Notification:</Value>
+          </Textbox>
+          <Textbox Name="textbox41">
+            <Top>1cm</Top>
+            <Width>3.5cm</Width>
+            <Style>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>14cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>= Format(Today, "dd MMM yyyy")</Value>
+          </Textbox>
+          <Textbox Name="textbox39">
+            <Top>1.88228cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontSize>6pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.40873cm</Left>
+            <Height>0.4cm</Height>
+            <Value>ver 2.30</Value>
+          </Textbox>
+          <Textbox Name="textbox38">
+            <Top>1.35582cm</Top>
+            <Width>5.75cm</Width>
+            <Style>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.40873cm</Left>
+            <Height>0.5cm</Height>
+            <Value>and Admission of Guilt</Value>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <Top>3.30291cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Residence:</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Top>3.30291cm</Top>
+            <Width>14.75cm</Width>
+            <Style>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!RESNAME.Value </Value>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <rd:DefaultName>textbox2</rd:DefaultName>
+            <Top>0.25cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Right</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Reference Number:</Value>
+          </Textbox>
+          <Textbox Name="refno">
+            <rd:DefaultName>refno</rd:DefaultName>
+            <Top>0.25cm</Top>
+            <Width>3.5cm</Width>
+            <Style>
+              <FontSize>9pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>14cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!refno.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Top>2.5cm</Top>
+            <Width>14.75cm</Width>
+            <Style>
+              <FontSize>9pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!titl.Value &amp; " " &amp; Fields!surn.Value &amp; ", " &amp; Fields!name1.Value &amp; " (" &amp; Fields!stuno.Value &amp;")"</Value>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>0.7381cm</Top>
+            <Width>5.75cm</Width>
+            <Style>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.40873cm</Left>
+            <Height>0.6cm</Height>
+            <Value>Notification of Sanction </Value>
+          </Textbox>
+          <Image Name="image1">
+            <Sizing>FitProportional</Sizing>
+            <Top>0.25cm</Top>
+            <Width>1.75cm</Width>
+            <MIMEType>image/jpeg</MIMEType>
+            <Source>Embedded</Source>
+            <Style />
+            <ZIndex>1</ZIndex>
+            <Left>0.25cm</Left>
+            <Height>2cm</Height>
+            <Value>rulogo</Value>
+          </Image>
+          <Textbox Name="textbox43">
+            <Top>6.17063cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontSize>9pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.68519cm</Height>
+            <Value>=Fields!offence_txt.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <Style>
+          <FontSize>8pt</FontSize>
+        </Style>
+        <Grouping Name="list1_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!refno.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+      </List>
+    </ReportItems>
+    <Height>16.48809cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox17">
+        <rd:DefaultName>textbox17</rd:DefaultName>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>10.25cm</Left>
+        <Value>="Printed on the " &amp; Format(Today, "dd MMMM yyyy")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.63492cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>1.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

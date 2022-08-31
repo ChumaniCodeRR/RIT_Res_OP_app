@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C95C9E3-3A18-4839-85D6-2F2FF2566F63}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Res_System</RootNamespace>
+    <AssemblyName>Res System</AssemblyName>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>Utilities\ADRESSESBOOK.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>E083C74BDE3A4DC647985E3014ABB84EB5327041</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <SignManifests>true</SignManifests>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>R:\publish\Res_System\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://dmuapps.ru.ac.za/publish/Res_System/</InstallUrl>
+    <ProductName>Residence System</ProductName>
+    <PublisherName>Protea Applications</PublisherName>
+    <MinimumRequiredVersion>1.1.0.63</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>64</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PN_Catering, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Catering\PN_Catering.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Conference, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Conference\PN_Conference.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Dept, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Dept\PN_Dept.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Discipline, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Discipline\PN_Discipline.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Global">
+      <HintPath>..\..\Proxies\NS_Global\PN_Global.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Grad, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Catering\PN_Grad.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Letters, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Letters\PN_Letters.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Registrars, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Registrars\PN_Registrars.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_ResSystem, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_ResSystem\PN_ResSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Stanley, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Stanley\PN_Stanley.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Student_Results, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Student_Results\PN_Student_Results.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Student_Search, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Student_Search\PN_Student_Search.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_StuInfo, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_StuInfo\PN_StuInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_System, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_System\PN_System.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_Tutors, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Tutors\PN_Tutors.dll</HintPath>
+    </Reference>
+    <Reference Include="PN_ValidateUsers, Version=10.0.1.50000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_ValidateUsers\PN_ValidateUsers.dll</HintPath>
+    </Reference>
+    <Reference Include="Progress.Messages, Version=10.2.2.1235, Culture=neutral, PublicKeyToken=1a0c0a15bd34807c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Registrars\Progress.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="Progress.o4glrt, Version=10.2.2.1235, Culture=neutral, PublicKeyToken=1a0c0a15bd34807c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Proxies\NS_Registrars\Progress.o4glrt.dll</HintPath>
+    </Reference>
+    <Reference Include="Proxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\c# Standard Classes\Proxy\Proxy\bin\Debug\Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\c# Standard Classes\DataGridViewNumericUpDownCell.cs">
+      <Link>CustomControls\DataGridViewNumericUpDownCell.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\c# Standard Classes\DataGridViewNumericUpDownColumn.cs">
+      <Link>CustomControls\DataGridViewNumericUpDownColumn.cs</Link>
+    </Compile>
+    <Compile Include="..\c# Standard Classes\Item.cs">
+      <Link>Utilities\Item.cs</Link>
+    </Compile>
+    <Compile Include="..\c# Standard Classes\MailMerge.cs">
+      <Link>Utilities\MailMerge.cs</Link>
+    </Compile>
+    <Compile Include="..\DepartmentSystem\DepartmentSystem\StudentPerformance\StudentPerformanceReport.cs">
+      <Link>StudentPerformance\StudentPerformanceReport.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\DepartmentSystem\DepartmentSystem\StudentPerformance\StudentPerformanceReport.designer.cs">
+      <Link>StudentPerformance\StudentPerformanceReport.designer.cs</Link>
+      <DependentUpon>StudentPerformanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Discipline\Reports\Criteria.cs">
+      <Link>Discipline\Criteria.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Discipline\Reports\Criteria.designer.cs">
+      <Link>Discipline\Criteria.designer.cs</Link>
+      <DependentUpon>Criteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Discipline\Reports\Reports_Disc.cs">
+      <Link>Discipline\Reports_Disc.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Discipline\Reports\Reports_Disc.designer.cs">
+      <Link>Discipline\Reports_Disc.designer.cs</Link>
+      <DependentUpon>Reports_Disc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Discipline\Reports\SummaryReport.cs">
+      <Link>Discipline\SummaryReport.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Discipline\Reports\SummaryReport.designer.cs">
+      <Link>Discipline\SummaryReport.designer.cs</Link>
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\Code_LookUp.cs">
+      <Link>Discipline\Code_LookUp.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\Code_LookUp.designer.cs">
+      <Link>Discipline\Code_LookUp.designer.cs</Link>
+      <DependentUpon>Code_LookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\Discipline_List.cs">
+      <Link>Discipline\Discipline_List.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\Discipline_List.designer.cs">
+      <Link>Discipline\Discipline_List.designer.cs</Link>
+      <DependentUpon>Discipline_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\Discipline_Screen.cs">
+      <Link>Discipline\Discipline_Screen.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\Discipline_Screen.designer.cs">
+      <Link>Discipline\Discipline_Screen.designer.cs</Link>
+      <DependentUpon>Discipline_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\StringBox.cs">
+      <Link>Discipline\StringBox.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Discipline\UpdateScreen\StringBox.designer.cs">
+      <Link>Discipline\StringBox.designer.cs</Link>
+      <DependentUpon>StringBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\DMU\DMU\Utilities\Constants.cs">
+      <Link>Utilities\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\DMU\DMU\Utilities\utils.cs">
+      <Link>Utilities\utils.cs</Link>
+    </Compile>
+    <Compile Include="..\ResOps\ResOps\ReportForm\StanReportForm.cs">
+      <Link>ReportForm\StanReportForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\ResOps\ResOps\ReportForm\StanReportForm.designer.cs">
+      <Link>ReportForm\StanReportForm.designer.cs</Link>
+      <DependentUpon>StanReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\ResOps\ResOps\StanleyAccessControl\HallResSelect.cs">
+      <Link>StanleyAccessControl\HallResSelect.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\ResOps\ResOps\StanleyAccessControl\HallResSelect.designer.cs">
+      <Link>StanleyAccessControl\HallResSelect.designer.cs</Link>
+      <DependentUpon>HallResSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\ResOps\ResOps\StanleyAccessControl\stanleyaccessreport.cs">
+      <Link>StanleyAccessControl\stanleyaccessreport.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\ResOps\ResOps\StanleyAccessControl\stanleyaccessreport.designer.cs">
+      <Link>StanleyAccessControl\stanleyaccessreport.designer.cs</Link>
+      <DependentUpon>stanleyaccessreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Shared_Screens\Labels\AdhocLabels.cs">
+      <Link>Labels\AdhocLabels.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Shared_Screens\Labels\AdhocLabels.designer.cs">
+      <Link>Labels\AdhocLabels.designer.cs</Link>
+      <DependentUpon>AdhocLabels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Shared_Screens\Labels\LetterSettings.cs">
+      <Link>Tools\LetterSettings.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Shared_Screens\Labels\LetterSettings.designer.cs">
+      <Link>Tools\LetterSettings.designer.cs</Link>
+      <DependentUpon>LetterSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Shared_Screens\Labels\StudentImport.cs">
+      <Link>Labels\StudentImport.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Shared_Screens\Labels\StudentImport.designer.cs">
+      <Link>Labels\StudentImport.designer.cs</Link>
+      <DependentUpon>StudentImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Shared_Screens\Labels\WorksheetSelectedArgs.cs">
+      <Link>EventArguments\WorksheetSelectedArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\SearchGrid\Search_Grid_Students.cs">
+      <Link>Shared_Screens\Search_Grid_Students.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\SearchGrid\Search_Grid_Students.designer.cs">
+      <Link>Shared_Screens\Search_Grid_Students.designer.cs</Link>
+      <DependentUpon>Search_Grid_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\Med_firstyrsonly.cs">
+      <Link>StudentMedicalDetails\Med_firstyrsonly.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\Med_firstyrsonly.designer.cs">
+      <Link>StudentMedicalDetails\Med_firstyrsonly.designer.cs</Link>
+      <DependentUpon>Med_firstyrsonly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\Reports_Medical.cs">
+      <Link>StudentMedicalDetails\Reports_Medical.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\Reports_Medical.designer.cs">
+      <Link>StudentMedicalDetails\Reports_Medical.designer.cs</Link>
+      <DependentUpon>Reports_Medical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\StudentMedicalDetails.cs">
+      <Link>StudentMedicalDetails\StudentMedicalDetails.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\StudentMedicalDetails.designer.cs">
+      <Link>StudentMedicalDetails\StudentMedicalDetails.designer.cs</Link>
+      <DependentUpon>StudentMedicalDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\Reports_Student_Personal_Details.cs">
+      <Link>StudentPersonalDetails\Reports_Student_Personal_Details.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\Reports_Student_Personal_Details.designer.cs">
+      <Link>StudentPersonalDetails\Reports_Student_Personal_Details.designer.cs</Link>
+      <DependentUpon>Reports_Student_Personal_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\res_access.cs">
+      <Link>StudentPersonalDetails\res_access.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\res_access.designer.cs">
+      <Link>StudentPersonalDetails\res_access.designer.cs</Link>
+      <DependentUpon>res_access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\StudentsPersonalDetails.cs">
+      <Link>StudentPersonalDetails\StudentsPersonalDetails.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\StudentsPersonalDetails.designer.cs">
+      <Link>StudentPersonalDetails\StudentsPersonalDetails.designer.cs</Link>
+      <DependentUpon>StudentsPersonalDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\CourseResultsFilters.cs">
+      <Link>StudentResults\CourseResultsFilters.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\CourseResultsFilters.designer.cs">
+      <Link>StudentResults\CourseResultsFilters.designer.cs</Link>
+      <DependentUpon>CourseResultsFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\Reports_Student_Results.cs">
+      <Link>StudentResults\Reports_Student_Results.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\Reports_Student_Results.designer.cs">
+      <Link>StudentResults\Reports_Student_Results.designer.cs</Link>
+      <DependentUpon>Reports_Student_Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\Report_Student_Marks.cs">
+      <Link>StudentResults\Report_Student_Marks.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\Report_Student_Marks.designer.cs">
+      <Link>StudentResults\Report_Student_Marks.designer.cs</Link>
+      <DependentUpon>Report_Student_Marks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\StudentResults.cs">
+      <Link>StudentResults\StudentResults.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentResults\StudentResults.designer.cs">
+      <Link>StudentResults\StudentResults.designer.cs</Link>
+      <DependentUpon>StudentResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentSearch\Student Search.cs">
+      <Link>Shared_Screens\Student Search.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\StudentDetails\StudentDetails\StudentSearch\Student Search.designer.cs">
+      <Link>Shared_Screens\Student Search.designer.cs</Link>
+      <DependentUpon>Student Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\ContactReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\ContactReport.Designer.cs">
+      <DependentUpon>ContactReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\FunctionReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FunctionReports.Designer.cs">
+      <DependentUpon>FunctionReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Assign_Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomManagement\Assign_Rooms.Designer.cs">
+      <DependentUpon>Assign_Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts\Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacts\Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOptions\PickSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\PickSemester.Designer.cs">
+      <DependentUpon>PickSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentClassMarks\StudentCourseMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentClassMarks\StudentCourseMarks.designer.cs">
+      <DependentUpon>StudentCourseMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updates\ResEvents\EventScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updates\ResEvents\EventScreen.Designer.cs">
+      <DependentUpon>EventScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updates\ResEvents\OtherResidences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updates\ResEvents\OtherResidences.Designer.cs">
+      <DependentUpon>OtherResidences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updates\ResEvents\ResFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updates\ResEvents\ResFunctions.Designer.cs">
+      <DependentUpon>ResFunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\CustomDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\DPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\DPR.Designer.cs">
+      <DependentUpon>DPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOptions\firstyrsonly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\firstyrsonly.designer.cs">
+      <DependentUpon>firstyrsonly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOptions\Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\Function.Designer.cs">
+      <DependentUpon>Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labels\LabelAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labels\LabelAddress.designer.cs">
+      <DependentUpon>LabelAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Global.cs" />
+    <Compile Include="Help\Manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\Manual.Designer.cs">
+      <DependentUpon>Manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\NullableDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\OppiSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\OppiSearch.Designer.cs">
+      <DependentUpon>OppiSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ResUtils.cs" />
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\Reports\StuPerformance\AttendanceStatSubreport.rdlc">
+      <Link>Reports\StuPerformance\AttendanceStatSubreport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\Reports\StuPerformance\CourseResultSubreport.rdlc">
+      <Link>Reports\StuPerformance\CourseResultSubreport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\Reports\StuPerformance\DepartmentCommentsSubreport.rdlc">
+      <Link>Reports\StuPerformance\DepartmentCommentsSubreport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\Reports\StuPerformance\PerformanceDetailSection.rdlc">
+      <Link>Reports\StuPerformance\PerformanceDetailSection.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\Reports\StuPerformance\StudentPerformance.rdlc">
+      <Link>Reports\StuPerformance\StudentPerformance.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\Reports\StuPerformance\StudentPerformanceBatch.rdlc">
+      <Link>Reports\StuPerformance\StudentPerformanceBatch.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\Reports\StuPerformance\StudentTutorGroup.rdlc">
+      <Link>Reports\StuPerformance\StudentTutorGroup.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DepartmentSystem\DepartmentSystem\StudentPerformance\StudentPerformanceReport.resx">
+      <Link>StudentPerformance\StudentPerformanceReport.resx</Link>
+      <DependentUpon>StudentPerformanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Criteria.resx">
+      <Link>Discipline\Criteria.resx</Link>
+      <DependentUpon>Criteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\AuthorityFirstSub.rdlc">
+      <Link>Reports\Discipline\AuthorityFirstSub.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\AuthorityFromReport.rdlc">
+      <Link>Reports\Discipline\AuthorityFromReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\AuthoritySecSub.rdlc">
+      <Link>Reports\Discipline\AuthoritySecSub.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\AuthoritySubReport.rdlc">
+      <Link>Reports\Discipline\AuthoritySubReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\AuthUnivSubReport.rdlc">
+      <Link>Reports\Discipline\AuthUnivSubReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\CompServiceRecord.rdlc">
+      <Link>Reports\Discipline\CompServiceRecord.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\Discipline.rdlc">
+      <Link>Reports\Discipline\Discipline.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\Disc_Category.rdlc">
+      <Link>Reports\Discipline\Disc_Category.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\Disc_Demographics.rdlc">
+      <Link>Reports\Discipline\Disc_Demographics.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\Disc_Range.rdlc">
+      <Link>Reports\Discipline\Disc_Range.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\Disc_Summary.rdlc">
+      <Link>Reports\Discipline\Disc_Summary.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\FirstSubReport.rdlc">
+      <Link>Reports\Discipline\FirstSubReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\HallSubReport.rdlc">
+      <Link>Reports\Discipline\HallSubReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\HouseSubReport.rdlc">
+      <Link>Reports\Discipline\HouseSubReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\NOP.rdlc">
+      <Link>Reports\Discipline\NOP.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\StuUnivSubReport.rdlc">
+      <Link>Reports\Discipline\StuUnivSubReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\SummaryByCategory.rdlc">
+      <Link>Reports\Discipline\SummaryByCategory.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\Summons.rdlc">
+      <Link>Reports\Discipline\Summons.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Discipline\TopSubReport.rdlc">
+      <Link>Reports\Discipline\TopSubReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\Reports_Disc.resx">
+      <Link>Discipline\Reports_Disc.resx</Link>
+      <DependentUpon>Reports_Disc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\Reports\SummaryReport.resx">
+      <Link>Discipline\SummaryReport.resx</Link>
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\UpdateScreen\Code_LookUp.resx">
+      <Link>Discipline\Code_LookUp.resx</Link>
+      <DependentUpon>Code_LookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\UpdateScreen\Discipline_List.resx">
+      <Link>Discipline\Discipline_List.resx</Link>
+      <DependentUpon>Discipline_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\UpdateScreen\Discipline_Screen.resx">
+      <Link>Discipline\Discipline_Screen.resx</Link>
+      <DependentUpon>Discipline_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Discipline\UpdateScreen\StringBox.resx">
+      <Link>Discipline\StringBox.resx</Link>
+      <DependentUpon>StringBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ResOps\ResOps\ReportForm\StanReportForm.resx">
+      <Link>ReportForm\StanReportForm.resx</Link>
+      <DependentUpon>StanReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ResOps\ResOps\Reports\Stanley\AccessException.rdlc">
+      <Link>Reports\Stanley\AccessException.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ResOps\ResOps\Reports\Stanley\Stanley_Access.rdlc">
+      <Link>Reports\Stanley\Stanley_Access.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ResOps\ResOps\Reports\Stanley\Stanley_exceptions.rdlc">
+      <Link>Reports\Stanley\Stanley_exceptions.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ResOps\ResOps\StanleyAccessControl\HallResSelect.resx">
+      <Link>StanleyAccessControl\HallResSelect.resx</Link>
+      <DependentUpon>HallResSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\ResOps\ResOps\StanleyAccessControl\stanleyaccessreport.resx">
+      <Link>StanleyAccessControl\stanleyaccessreport.resx</Link>
+      <DependentUpon>stanleyaccessreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shared_Screens\Labels\AdhocLabels.resx">
+      <Link>Labels\AdhocLabels.resx</Link>
+      <DependentUpon>AdhocLabels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shared_Screens\Labels\LetterSettings.resx">
+      <Link>Tools\LetterSettings.resx</Link>
+      <DependentUpon>LetterSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shared_Screens\Labels\StudentImport.resx">
+      <Link>Labels\StudentImport.resx</Link>
+      <DependentUpon>StudentImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\Reports\Medical_Details\Med_Aid_Info.rdlc">
+      <Link>Reports\Medical_Details\Med_Aid_Info.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\Reports\Results\MatResults.rdlc">
+      <Link>Reports\Results\MatResults.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\Reports\Results\Results.rdlc">
+      <Link>Reports\Results\Results.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\Reports\Results\StuCommSubreport.rdlc">
+      <Link>Reports\Results\StuCommSubreport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\Reports\Results\StudentMarksDetail.rdlc">
+      <Link>Reports\Results\StudentMarksDetail.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\Reports\Results\StudentMarksSubreport.rdlc">
+      <Link>Reports\Results\StudentMarksSubreport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\Reports\Student_Information\Student_Information.rdlc">
+      <Link>Reports\Student_Information\Student_Information.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\SearchGrid\Search_Grid_Students.resx">
+      <Link>Shared_Screens\Search_Grid_Students.resx</Link>
+      <DependentUpon>Search_Grid_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\Med_firstyrsonly.resx">
+      <Link>StudentMedicalDetails\Med_firstyrsonly.resx</Link>
+      <DependentUpon>Med_firstyrsonly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\Reports_Medical.resx">
+      <Link>StudentMedicalDetails\Reports_Medical.resx</Link>
+      <DependentUpon>Reports_Medical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentMedicalDetails\StudentMedicalDetails.resx">
+      <Link>StudentMedicalDetails\StudentMedicalDetails.resx</Link>
+      <DependentUpon>StudentMedicalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\Reports_Student_Personal_Details.resx">
+      <Link>StudentPersonalDetails\Reports_Student_Personal_Details.resx</Link>
+      <DependentUpon>Reports_Student_Personal_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\res_access.resx">
+      <Link>StudentPersonalDetails\res_access.resx</Link>
+      <DependentUpon>res_access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentPersonalDetails\StudentsPersonalDetails.resx">
+      <Link>StudentPersonalDetails\StudentsPersonalDetails.resx</Link>
+      <DependentUpon>StudentsPersonalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentResults\CourseResultsFilters.resx">
+      <Link>StudentResults\CourseResultsFilters.resx</Link>
+      <DependentUpon>CourseResultsFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentResults\Reports_Student_Results.resx">
+      <Link>StudentResults\Reports_Student_Results.resx</Link>
+      <DependentUpon>Reports_Student_Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentResults\Report_Student_Marks.resx">
+      <Link>StudentResults\Report_Student_Marks.resx</Link>
+      <DependentUpon>Report_Student_Marks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentResults\StudentResults.resx">
+      <Link>StudentResults\StudentResults.resx</Link>
+      <DependentUpon>StudentResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\StudentDetails\StudentDetails\StudentSearch\Student Search.resx">
+      <Link>Shared_Screens\Student Search.resx</Link>
+      <DependentUpon>Student Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\ContactReport.resx">
+      <DependentUpon>ContactReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FunctionReports.resx">
+      <DependentUpon>FunctionReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AcademicReports\ExtendedStudies.rdlc" />
+    <EmbeddedResource Include="Reports\AcademicReports\StuMarks.rdlc" />
+    <EmbeddedResource Include="Reports\ContactInfo\Phone_Directory.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\MedAidDoctors.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\DoubleAllocations.rdlc" />
+    <EmbeddedResource Include="Reports\StudentRegisters\Functions1.rdlc" />
+    <EmbeddedResource Include="Reports\Updates\HousecommList.rdlc" />
+    <EmbeddedResource Include="RoomManagement\Assign_Rooms.resx">
+      <DependentUpon>Assign_Rooms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labels\LabelAddress.resx">
+      <DependentUpon>LabelAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchOptions\OppiSearch.resx">
+      <DependentUpon>OppiSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Lists\Birthdays.rdlc" />
+    <EmbeddedResource Include="Reports\StudentRegisters\Boxroom.rdlc" />
+    <EmbeddedResource Include="Reports\StudentRegisters\Arrivals.rdlc" />
+    <EmbeddedResource Include="Contacts\Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GeneralResInfo\AccessException.rdlc" />
+    <EmbeddedResource Include="SearchOptions\firstyrsonly.resx">
+      <DependentUpon>firstyrsonly.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Lists\EmailList.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\DoubleRooms.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\MedicalList.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\EmergencyList.rdlc" />
+    <EmbeddedResource Include="Reports\GeneralResInfo\PrevYears.rdlc" />
+    <EmbeddedResource Include="Reports\Student_Information\ResHistory.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\TimeTable.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\Resrooms.rdlc" />
+    <EmbeddedResource Include="Reports\ResSystem\GeneralAll.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\door_labels.rdlc" />
+    <EmbeddedResource Include="Reports\StudentRegisters\Departures_Exams.rdlc" />
+    <EmbeddedResource Include="Reports\StudentRegisters\Departures.rdlc" />
+    <EmbeddedResource Include="Help\Manual.resx">
+      <DependentUpon>Manual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Lists\room_list.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\Last_Exam_Dte.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\mail_forward.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\Departure_List.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\stulist.rdlc" />
+    <EmbeddedResource Include="Reports\ResSystem\General.rdlc" />
+    <EmbeddedResource Include="Reports\StudentRegisters\Functions.rdlc" />
+    <EmbeddedResource Include="Reports\AcademicReports\ResPass.rdlc" />
+    <EmbeddedResource Include="Reports\HallReports\PassRate.rdlc" />
+    <EmbeddedResource Include="Reports\GeneralResInfo\Demographics.rdlc" />
+    <EmbeddedResource Include="Reports\AcademicReports\Exam_Ranking.rdlc" />
+    <EmbeddedResource Include="SearchOptions\DPR.resx">
+      <DependentUpon>DPR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AcademicReports\Gen.rdlc" />
+    <EmbeddedResource Include="SearchOptions\PickSemester.resx">
+      <DependentUpon>PickSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchOptions\resstatus.resx">
+      <DependentUpon>resstatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Lists\Housecomm.rdlc" />
+    <EmbeddedResource Include="SearchOptions\Results_Year.resx">
+      <DependentUpon>Results_Year.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Lists\Res_Photos.rdlc" />
+    <EmbeddedResource Include="Reports\Lists\Intercom.rdlc" />
+    <EmbeddedResource Include="SearchOptions\Function.resx">
+      <DependentUpon>Function.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Lists\Phone_Nos.rdlc" />
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResList.resx">
+      <DependentUpon>ResList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomManagement\Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomManagement\Sections.resx">
+      <DependentUpon>Sections.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentClassMarks\StudentCourseMarks.resx">
+      <DependentUpon>StudentCourseMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updates\ResEvents\EventScreen.resx">
+      <DependentUpon>EventScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updates\ResEvents\OtherResidences.resx">
+      <DependentUpon>OtherResidences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updates\ResEvents\ResFunctions.resx">
+      <DependentUpon>ResFunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updates\StudentLeadership.resx">
+      <DependentUpon>StudentLeadership.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\tac.resx">
+      <DependentUpon>tac.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchOptions\Year.resx">
+      <DependentUpon>Year.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchOptions\Year_Exam.resx">
+      <DependentUpon>Year_Exam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\NS_Catering.StrongTypesNS.ds_res_functionsDataSet+TT_RES_LISTDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_Conference.StrongTypesNS.ds_conference_lookupDataSet+tt_dietsDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_Dept.StrongTypesNS.ds_subject_marksDataSet+tt_stuclassmkDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_DOUBLE_ROOMSDataSet+TT_DOUBLEDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_GENDataSet+TT_CONTACTDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_HOUSECOMMDataSet+tt_house_commDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_OPPISTUDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_OPPI_REPORTSDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_REPORTSDataSet+TT_DEMOGRAPHICSDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_REPORTSDataSet+TT_MED_AIDDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_REPORTSDataSet+TT_STU_DIETDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_REPORTSDataSet+TT_STU_INFODataTable.datasource" />
+    <None Include="Properties\DataSources\NS_System.StrongTypesNS.DS_BRANCHDataSet+TT_DEPT_BRANCHDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_System.StrongTypesNS.DS_BUILDINGSDataSet+TT_BUILDINGDataTable.datasource" />
+    <None Include="Properties\DataSources\NS_System.StrongTypesNS.ds_deg_facultyDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_System.StrongTypesNS.DS_SUBJDataSet+TT_SUBJDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportForm\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResList.Designer.cs">
+      <DependentUpon>ResList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOptions\resstatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\resstatus.Designer.cs">
+      <DependentUpon>resstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOptions\Results_Year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\Results_Year.Designer.cs">
+      <DependentUpon>Results_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomManagement\Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Sections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomManagement\Sections.Designer.cs">
+      <DependentUpon>Sections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updates\StudentLeadership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updates\StudentLeadership.Designer.cs">
+      <DependentUpon>StudentLeadership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\tac.Designer.cs">
+      <DependentUpon>tac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Enumerations.cs" />
+    <Compile Include="SearchOptions\Year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\Year.Designer.cs">
+      <DependentUpon>Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOptions\Year_Exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOptions\Year_Exam.Designer.cs">
+      <DependentUpon>Year_Exam.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_REPORTSDataSet.datasource" />
+    <None Include="Resources\no_photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.11.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Report Viewer 2012 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2012 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Utilities\ADRESSESBOOK.ico" />
+    <None Include="Properties\DataSources\NS_Discipline.StrongTypesNS.DS_REPORTDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_Discipline.StrongTypesNS.DS_STUBADDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_GENDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_RESDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_ROOMLISTDataSet1.datasource" />
+    <None Include="Properties\DataSources\NS_Student_Results.StrongTypesNS.DS_RESULTSDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_Student_Search.StrongTypesNS.DS_STUSEARCHDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_StuInfo.StrongTypesNS.DS_STUINFODataSet.datasource" />
+    <None Include="Properties\DataSources\NS_System.StrongTypesNS.DS_PHOTODataSet.datasource" />
+    <None Include="Properties\DataSources\NS_System.StrongTypesNS.DS_RESCODESDataSet.datasource" />
+    <None Include="Resources\clocktower.jpg" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_PASSRATEDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_RANKINGDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_RESULTSDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_RES_GRAPHDataSet.datasource" />
+    <None Include="Properties\DataSources\NS_ResSystem.StrongTypesNS.DS_STUFILEDataSet.datasource" />
+    <None Include="Resources\Calender.png" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\printer.png.gif" />
+    <None Include="Resources\rhodes_crest.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

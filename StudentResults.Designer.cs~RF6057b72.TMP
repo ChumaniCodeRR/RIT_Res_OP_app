@@ -1,0 +1,604 @@
+﻿namespace Res_System
+{
+    partial class StudentResults
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentResults));
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.Btn_Close = new System.Windows.Forms.Button();
+            this.tcStudentResults = new System.Windows.Forms.TabControl();
+            this.tpUniversityResults = new System.Windows.Forms.TabPage();
+            this.btn_print_results = new System.Windows.Forms.Button();
+            this.rballyrs = new System.Windows.Forms.RadioButton();
+            this.rblastyr = new System.Windows.Forms.RadioButton();
+            this.rbthisyr = new System.Windows.Forms.RadioButton();
+            this.tpMatricResults = new System.Windows.Forms.TabPage();
+            this.label58 = new System.Windows.Forms.Label();
+            this.txtmatrbody = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.txtschotype = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.txt_final_pts = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.txt_final_unwpts = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.txt_prov_matr_pts = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.txt_prov_unwt_matr = new System.Windows.Forms.TextBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.txtschool = new System.Windows.Forms.TextBox();
+            this.bsMatricDetails = new System.Windows.Forms.BindingSource(this.components);
+            this.dg_results = new CustomDataGridView();
+            this.dg_comments = new CustomDataGridView();
+            this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dg_matr_results = new CustomDataGridView();
+            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProvMark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FinalMark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unuversitySubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.JunMk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.JunCl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NovMk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NovCl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FinMk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FinCl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DropDte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tcStudentResults.SuspendLayout();
+            this.tpUniversityResults.SuspendLayout();
+            this.tpMatricResults.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsMatricDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_results)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_comments)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_matr_results)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // textBox22
+            // 
+            this.textBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox22.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox22.ForeColor = System.Drawing.Color.Purple;
+            this.textBox22.Location = new System.Drawing.Point(308, 5);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(125, 19);
+            this.textBox22.TabIndex = 26;
+            this.textBox22.Text = "Student Results";
+            // 
+            // Btn_Close
+            // 
+            this.Btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Close.BackColor = System.Drawing.Color.Red;
+            this.Btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Close.ForeColor = System.Drawing.Color.White;
+            this.Btn_Close.Location = new System.Drawing.Point(722, 1);
+            this.Btn_Close.Name = "Btn_Close";
+            this.Btn_Close.Size = new System.Drawing.Size(22, 23);
+            this.Btn_Close.TabIndex = 27;
+            this.Btn_Close.Text = "X";
+            this.Btn_Close.UseVisualStyleBackColor = false;
+            // 
+            // tcStudentResults
+            // 
+            this.tcStudentResults.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tcStudentResults.Controls.Add(this.tpUniversityResults);
+            this.tcStudentResults.Controls.Add(this.tpMatricResults);
+            this.tcStudentResults.Location = new System.Drawing.Point(1, 30);
+            this.tcStudentResults.Name = "tcStudentResults";
+            this.tcStudentResults.SelectedIndex = 0;
+            this.tcStudentResults.Size = new System.Drawing.Size(745, 549);
+            this.tcStudentResults.TabIndex = 28;
+            // 
+            // tpUniversityResults
+            // 
+            this.tpUniversityResults.Controls.Add(this.dg_results);
+            this.tpUniversityResults.Controls.Add(this.btn_print_results);
+            this.tpUniversityResults.Controls.Add(this.rballyrs);
+            this.tpUniversityResults.Controls.Add(this.rblastyr);
+            this.tpUniversityResults.Controls.Add(this.rbthisyr);
+            this.tpUniversityResults.Controls.Add(this.dg_comments);
+            this.tpUniversityResults.Location = new System.Drawing.Point(4, 22);
+            this.tpUniversityResults.Name = "tpUniversityResults";
+            this.tpUniversityResults.Padding = new System.Windows.Forms.Padding(3);
+            this.tpUniversityResults.Size = new System.Drawing.Size(737, 523);
+            this.tpUniversityResults.TabIndex = 0;
+            this.tpUniversityResults.Text = "University Results";
+            this.tpUniversityResults.UseVisualStyleBackColor = true;
+            // 
+            // btn_print_results
+            // 
+            this.btn_print_results.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_print_results.Image = ((System.Drawing.Image)(resources.GetObject("btn_print_results.Image")));
+            this.btn_print_results.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_print_results.Location = new System.Drawing.Point(313, 493);
+            this.btn_print_results.Name = "btn_print_results";
+            this.btn_print_results.Size = new System.Drawing.Size(114, 23);
+            this.btn_print_results.TabIndex = 148;
+            this.btn_print_results.Text = "     Print Results";
+            this.btn_print_results.UseVisualStyleBackColor = true;
+            // 
+            // rballyrs
+            // 
+            this.rballyrs.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.rballyrs.AutoSize = true;
+            this.rballyrs.Checked = true;
+            this.rballyrs.Location = new System.Drawing.Point(408, 326);
+            this.rballyrs.Name = "rballyrs";
+            this.rballyrs.Size = new System.Drawing.Size(66, 17);
+            this.rballyrs.TabIndex = 144;
+            this.rballyrs.TabStop = true;
+            this.rballyrs.Text = "All Years";
+            this.rballyrs.UseVisualStyleBackColor = true;
+            // 
+            // rblastyr
+            // 
+            this.rblastyr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.rblastyr.AutoSize = true;
+            this.rblastyr.Location = new System.Drawing.Point(332, 326);
+            this.rblastyr.Name = "rblastyr";
+            this.rblastyr.Size = new System.Drawing.Size(70, 17);
+            this.rblastyr.TabIndex = 146;
+            this.rblastyr.Text = "Last Year";
+            this.rblastyr.UseVisualStyleBackColor = true;
+            // 
+            // rbthisyr
+            // 
+            this.rbthisyr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.rbthisyr.AutoSize = true;
+            this.rbthisyr.Location = new System.Drawing.Point(256, 326);
+            this.rbthisyr.Name = "rbthisyr";
+            this.rbthisyr.Size = new System.Drawing.Size(70, 17);
+            this.rbthisyr.TabIndex = 145;
+            this.rbthisyr.Text = "This Year";
+            this.rbthisyr.UseVisualStyleBackColor = true;
+            // 
+            // tpMatricResults
+            // 
+            this.tpMatricResults.Controls.Add(this.dg_matr_results);
+            this.tpMatricResults.Controls.Add(this.label58);
+            this.tpMatricResults.Controls.Add(this.txtmatrbody);
+            this.tpMatricResults.Controls.Add(this.label59);
+            this.tpMatricResults.Controls.Add(this.txtschotype);
+            this.tpMatricResults.Controls.Add(this.label60);
+            this.tpMatricResults.Controls.Add(this.txt_final_pts);
+            this.tpMatricResults.Controls.Add(this.label61);
+            this.tpMatricResults.Controls.Add(this.txt_final_unwpts);
+            this.tpMatricResults.Controls.Add(this.label63);
+            this.tpMatricResults.Controls.Add(this.txt_prov_matr_pts);
+            this.tpMatricResults.Controls.Add(this.label67);
+            this.tpMatricResults.Controls.Add(this.txt_prov_unwt_matr);
+            this.tpMatricResults.Controls.Add(this.label72);
+            this.tpMatricResults.Controls.Add(this.txtschool);
+            this.tpMatricResults.Location = new System.Drawing.Point(4, 22);
+            this.tpMatricResults.Name = "tpMatricResults";
+            this.tpMatricResults.Padding = new System.Windows.Forms.Padding(3);
+            this.tpMatricResults.Size = new System.Drawing.Size(737, 523);
+            this.tpMatricResults.TabIndex = 1;
+            this.tpMatricResults.Text = "Matric Results";
+            this.tpMatricResults.UseVisualStyleBackColor = true;
+            // 
+            // label58
+            // 
+            this.label58.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(296, 64);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(63, 13);
+            this.label58.TabIndex = 34;
+            this.label58.Text = "Matric Body";
+            // 
+            // txtmatrbody
+            // 
+            this.txtmatrbody.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtmatrbody.Location = new System.Drawing.Point(365, 58);
+            this.txtmatrbody.Name = "txtmatrbody";
+            this.txtmatrbody.ReadOnly = true;
+            this.txtmatrbody.Size = new System.Drawing.Size(259, 20);
+            this.txtmatrbody.TabIndex = 33;
+            this.txtmatrbody.TabStop = false;
+            // 
+            // label59
+            // 
+            this.label59.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(111, 64);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(67, 13);
+            this.label59.TabIndex = 32;
+            this.label59.Text = "School Type";
+            // 
+            // txtschotype
+            // 
+            this.txtschotype.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtschotype.Location = new System.Drawing.Point(188, 58);
+            this.txtschotype.Name = "txtschotype";
+            this.txtschotype.ReadOnly = true;
+            this.txtschotype.Size = new System.Drawing.Size(35, 20);
+            this.txtschotype.TabIndex = 31;
+            this.txtschotype.TabStop = false;
+            // 
+            // label60
+            // 
+            this.label60.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(432, 113);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(142, 13);
+            this.label60.TabIndex = 30;
+            this.label60.Text = "Final Weighted Matric Points";
+            // 
+            // txt_final_pts
+            // 
+            this.txt_final_pts.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_final_pts.Location = new System.Drawing.Point(580, 110);
+            this.txt_final_pts.Name = "txt_final_pts";
+            this.txt_final_pts.ReadOnly = true;
+            this.txt_final_pts.Size = new System.Drawing.Size(44, 20);
+            this.txt_final_pts.TabIndex = 29;
+            this.txt_final_pts.TabStop = false;
+            // 
+            // label61
+            // 
+            this.label61.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(111, 113);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(155, 13);
+            this.label61.TabIndex = 28;
+            this.label61.Text = "Finall Unweighted Matric Points";
+            // 
+            // txt_final_unwpts
+            // 
+            this.txt_final_unwpts.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_final_unwpts.Location = new System.Drawing.Point(299, 110);
+            this.txt_final_unwpts.Name = "txt_final_unwpts";
+            this.txt_final_unwpts.ReadOnly = true;
+            this.txt_final_unwpts.Size = new System.Drawing.Size(44, 20);
+            this.txt_final_unwpts.TabIndex = 27;
+            this.txt_final_unwpts.TabStop = false;
+            // 
+            // label63
+            // 
+            this.label63.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(403, 87);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(171, 13);
+            this.label63.TabIndex = 26;
+            this.label63.Text = "Provisional Weighted Matric Points";
+            // 
+            // txt_prov_matr_pts
+            // 
+            this.txt_prov_matr_pts.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_prov_matr_pts.Location = new System.Drawing.Point(580, 84);
+            this.txt_prov_matr_pts.Name = "txt_prov_matr_pts";
+            this.txt_prov_matr_pts.ReadOnly = true;
+            this.txt_prov_matr_pts.Size = new System.Drawing.Size(44, 20);
+            this.txt_prov_matr_pts.TabIndex = 25;
+            this.txt_prov_matr_pts.TabStop = false;
+            // 
+            // label67
+            // 
+            this.label67.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(111, 87);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(182, 13);
+            this.label67.TabIndex = 24;
+            this.label67.Text = "Provisional Unweighted Matric Points";
+            // 
+            // txt_prov_unwt_matr
+            // 
+            this.txt_prov_unwt_matr.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_prov_unwt_matr.Location = new System.Drawing.Point(299, 84);
+            this.txt_prov_unwt_matr.Name = "txt_prov_unwt_matr";
+            this.txt_prov_unwt_matr.ReadOnly = true;
+            this.txt_prov_unwt_matr.Size = new System.Drawing.Size(44, 20);
+            this.txt_prov_unwt_matr.TabIndex = 23;
+            this.txt_prov_unwt_matr.TabStop = false;
+            // 
+            // label72
+            // 
+            this.label72.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(111, 35);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(71, 13);
+            this.label72.TabIndex = 22;
+            this.label72.Text = "School Name";
+            // 
+            // txtschool
+            // 
+            this.txtschool.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtschool.Location = new System.Drawing.Point(188, 32);
+            this.txtschool.Name = "txtschool";
+            this.txtschool.ReadOnly = true;
+            this.txtschool.Size = new System.Drawing.Size(436, 20);
+            this.txtschool.TabIndex = 21;
+            this.txtschool.TabStop = false;
+            // 
+            // dg_results
+            // 
+            this.dg_results.AllowUserToAddRows = false;
+            this.dg_results.AllowUserToDeleteRows = false;
+            this.dg_results.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_results.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_results.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.unuversitySubject,
+            this.JunMk,
+            this.JunCl,
+            this.NovMk,
+            this.NovCl,
+            this.FinMk,
+            this.FinCl,
+            this.DropDte});
+            this.dg_results.Location = new System.Drawing.Point(10, 6);
+            this.dg_results.Name = "dg_results";
+            this.dg_results.ReadOnly = true;
+            this.dg_results.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dg_results.Size = new System.Drawing.Size(716, 308);
+            this.dg_results.TabIndex = 149;
+            this.dg_results.TabStop = false;
+            // 
+            // dg_comments
+            // 
+            this.dg_comments.AllowUserToAddRows = false;
+            this.dg_comments.AllowUserToDeleteRows = false;
+            this.dg_comments.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_comments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_comments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Year,
+            this.Date,
+            this.Comment});
+            this.dg_comments.Location = new System.Drawing.Point(10, 349);
+            this.dg_comments.Name = "dg_comments";
+            this.dg_comments.ReadOnly = true;
+            this.dg_comments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dg_comments.Size = new System.Drawing.Size(716, 138);
+            this.dg_comments.TabIndex = 147;
+            this.dg_comments.TabStop = false;
+            // 
+            // Year
+            // 
+            this.Year.DataPropertyName = "YR";
+            this.Year.HeaderText = "Year";
+            this.Year.Name = "Year";
+            this.Year.ReadOnly = true;
+            this.Year.Width = 75;
+            // 
+            // Date
+            // 
+            this.Date.DataPropertyName = "COMM_DTE";
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // Comment
+            // 
+            this.Comment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Comment.DataPropertyName = "COMM";
+            this.Comment.HeaderText = "Comment";
+            this.Comment.Name = "Comment";
+            this.Comment.ReadOnly = true;
+            // 
+            // dg_matr_results
+            // 
+            this.dg_matr_results.AllowUserToAddRows = false;
+            this.dg_matr_results.AllowUserToDeleteRows = false;
+            this.dg_matr_results.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_matr_results.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_matr_results.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Subject,
+            this.ProvMark,
+            this.FinalMark});
+            this.dg_matr_results.Location = new System.Drawing.Point(127, 166);
+            this.dg_matr_results.Name = "dg_matr_results";
+            this.dg_matr_results.ReadOnly = true;
+            this.dg_matr_results.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dg_matr_results.Size = new System.Drawing.Size(484, 268);
+            this.dg_matr_results.TabIndex = 35;
+            this.dg_matr_results.TabStop = false;
+            // 
+            // Subject
+            // 
+            this.Subject.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Subject.DataPropertyName = "SUBJNAME";
+            this.Subject.HeaderText = "Subject";
+            this.Subject.Name = "Subject";
+            this.Subject.ReadOnly = true;
+            // 
+            // ProvMark
+            // 
+            this.ProvMark.DataPropertyName = "PROV_SYMB";
+            this.ProvMark.HeaderText = "Prov Mark";
+            this.ProvMark.Name = "ProvMark";
+            this.ProvMark.ReadOnly = true;
+            // 
+            // FinalMark
+            // 
+            this.FinalMark.DataPropertyName = "FINAL_SYMB";
+            this.FinalMark.HeaderText = "Final Mark";
+            this.FinalMark.Name = "FinalMark";
+            this.FinalMark.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "YR";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Year";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 75;
+            // 
+            // unuversitySubject
+            // 
+            this.unuversitySubject.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.unuversitySubject.DataPropertyName = "SUBJNAME";
+            this.unuversitySubject.HeaderText = "Subject";
+            this.unuversitySubject.Name = "unuversitySubject";
+            this.unuversitySubject.ReadOnly = true;
+            // 
+            // JunMk
+            // 
+            this.JunMk.DataPropertyName = "JUN_MK";
+            this.JunMk.HeaderText = "Jun Mk";
+            this.JunMk.Name = "JunMk";
+            this.JunMk.ReadOnly = true;
+            this.JunMk.Width = 45;
+            // 
+            // JunCl
+            // 
+            this.JunCl.DataPropertyName = "JUN_CL";
+            this.JunCl.HeaderText = "Jun Cl";
+            this.JunCl.Name = "JunCl";
+            this.JunCl.ReadOnly = true;
+            this.JunCl.Width = 45;
+            // 
+            // NovMk
+            // 
+            this.NovMk.DataPropertyName = "NOV_MK";
+            this.NovMk.HeaderText = "Nov Mk";
+            this.NovMk.Name = "NovMk";
+            this.NovMk.ReadOnly = true;
+            this.NovMk.Width = 45;
+            // 
+            // NovCl
+            // 
+            this.NovCl.DataPropertyName = "NOV_CL";
+            this.NovCl.HeaderText = "Nov Cl";
+            this.NovCl.Name = "NovCl";
+            this.NovCl.ReadOnly = true;
+            this.NovCl.Width = 45;
+            // 
+            // FinMk
+            // 
+            this.FinMk.DataPropertyName = "FIN_MK";
+            this.FinMk.HeaderText = "Fin Mk";
+            this.FinMk.Name = "FinMk";
+            this.FinMk.ReadOnly = true;
+            this.FinMk.Width = 45;
+            // 
+            // FinCl
+            // 
+            this.FinCl.DataPropertyName = "FIN_CL";
+            this.FinCl.HeaderText = "Fin Cl";
+            this.FinCl.Name = "FinCl";
+            this.FinCl.ReadOnly = true;
+            this.FinCl.Width = 45;
+            // 
+            // DropDte
+            // 
+            this.DropDte.DataPropertyName = "DROP_DTE";
+            this.DropDte.HeaderText = "Drop Dte";
+            this.DropDte.Name = "DropDte";
+            this.DropDte.ReadOnly = true;
+            this.DropDte.Width = 75;
+            // 
+            // StudentResults
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(745, 579);
+            this.Controls.Add(this.tcStudentResults);
+            this.Controls.Add(this.Btn_Close);
+            this.Controls.Add(this.textBox22);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "StudentResults";
+            this.Text = "StudentResults";
+            this.tcStudentResults.ResumeLayout(false);
+            this.tpUniversityResults.ResumeLayout(false);
+            this.tpUniversityResults.PerformLayout();
+            this.tpMatricResults.ResumeLayout(false);
+            this.tpMatricResults.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsMatricDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_results)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_comments)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_matr_results)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Button Btn_Close;
+        private System.Windows.Forms.TabControl tcStudentResults;
+        private System.Windows.Forms.TabPage tpUniversityResults;
+        private System.Windows.Forms.TabPage tpMatricResults;
+        private CustomDataGridView dg_results;
+        private System.Windows.Forms.Button btn_print_results;
+        private System.Windows.Forms.RadioButton rballyrs;
+        private System.Windows.Forms.RadioButton rblastyr;
+        private System.Windows.Forms.RadioButton rbthisyr;
+        private CustomDataGridView dg_comments;
+        private CustomDataGridView dg_matr_results;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.TextBox txtmatrbody;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.TextBox txtschotype;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox txt_final_pts;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.TextBox txt_final_unwpts;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.TextBox txt_prov_matr_pts;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.TextBox txt_prov_unwt_matr;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.TextBox txtschool;
+        private System.Windows.Forms.BindingSource bsMatricDetails;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProvMark;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FinalMark;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Year;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Comment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unuversitySubject;
+        private System.Windows.Forms.DataGridViewTextBoxColumn JunMk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn JunCl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NovMk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NovCl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FinMk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FinCl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DropDte;
+    }
+}

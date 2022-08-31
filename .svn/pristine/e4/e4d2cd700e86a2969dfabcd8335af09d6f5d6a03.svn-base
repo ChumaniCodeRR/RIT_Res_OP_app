@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="Res_System.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="Student_System.Properties.Settings.ConnectionString" connectionString="Dsn=protea.ru.ac.za;uid=CCDE;host=protea.ru.ac.za;port=5025;db=meals" providerName="System.Data.Odbc"/>
+    </connectionStrings>
+	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="Progress.o4glrt" publicKeyToken="1A0C0A15BD34807C" culture="neutral"/>
+				<bindingRedirect oldVersion="0.0.0.0-10.2.2.1235" newVersion="10.2.2.1235"/>
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Progress.Messages" publicKeyToken="1A0C0A15BD34807C" culture="neutral"/>
+				<bindingRedirect oldVersion="0.0.0.0-10.2.2.1235" newVersion="10.2.2.1235"/>
+			</dependentAssembly>
+		</assemblyBinding>
+	</runtime>
+ <userSettings>
+  <Res_System.Properties.Settings>
+   <setting name="Start_Res" serializeAs="String">
+    <value/>
+   </setting>
+   <setting name="Start_Hall" serializeAs="String">
+    <value/>
+   </setting>
+   <setting name="LetterTemplateDirectory" serializeAs="String">
+    <value>C:\</value>
+   </setting>
+   <setting name="LetterOutputDirectory" serializeAs="String">
+    <value>C:\</value>
+   </setting>
+  </Res_System.Properties.Settings>
+ </userSettings>
+<startup><supportedRuntime version="v2.0.50727"/></startup></configuration>

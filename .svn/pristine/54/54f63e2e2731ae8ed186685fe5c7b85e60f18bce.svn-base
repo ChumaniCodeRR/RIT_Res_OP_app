@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using Utilities;
+
+namespace Res_System
+{
+    public partial class StudentReports : Form
+    {
+        Reports mainForm;
+        string _from_where;
+        public StudentReports(Reports MainForm, string from_where)
+        {
+            mainForm = MainForm;
+            InitializeComponent();
+            _from_where = from_where;
+
+        }
+
+        private void StudentReports_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                mainForm.proceed = false;
+               cb_student.Visible = true;
+               lbl_stuname.Visible = true;
+               
+                //Bind student list
+                DataView dvStudents = new DataView(Global.Global.ds_stuinfo.tt_student_info);
+                dvStudents.Sort = ("surn");
+                cb_student.DataSource = dvStudents;
+                cb_student.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.ResSystem, ex);
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string feedback = "";
+            if (cb_student.SelectedIndex.Equals(-1)) 
+            {
+                 feedback = "Please select student from the list";
+            }
+            else
+            {
+                  mainForm.tempstu = cb_student.SelectedValue.ToString();
+                   mainForm.proceed = true;
+                   this.Close();
+            }
+             if (feedback != "")
+                {
+                   MessageBox.Show(feedback, "Error Select", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+                }
+            }
+          
+        }
+    }
+

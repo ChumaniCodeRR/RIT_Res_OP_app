@@ -1,0 +1,441 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Utilities;
+
+namespace Res_System.Updates.ResEvents
+{
+    public partial class EventScreen : Form
+    {
+        DataSet ds_rescodes;
+
+        bool IsValid;
+        string ErrorString = "";
+        bool AddNew;
+        int ReferenceNumber;
+        int TempRes;
+        string from_where;
+        string FunctionStatus;
+
+        NS_Catering.StrongTypesNS.ds_res_functionsDataSet ds_function = new NS_Catering.StrongTypesNS.ds_res_functionsDataSet();
+
+        bool loaded = false;
+
+        public EventScreen(string _from_where,bool _AddNew, int RefNo,int _tempres)
+        {
+            InitializeComponent();
+            from_where = _from_where;
+
+            AddNew = _AddNew;
+            ReferenceNumber = RefNo;
+            TempRes = _tempres;
+        }
+
+
+        public EventScreen(string _from_where, bool _AddNew, int RefNo, int _tempres, string _FunctionStatus)
+        {
+            InitializeComponent();
+            from_where = _from_where;
+
+            AddNew = _AddNew;
+            ReferenceNumber = RefNo;
+            TempRes = _tempres;
+            FunctionStatus = _FunctionStatus;
+        }
+
+
+        private void EventScreen_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+                SortedDictionary<string, string> userCache = new SortedDictionary<string, string>
+                {
+                    {"Pending", ""},
+	                {"Approved", "A"},
+	                {"Declined", "X"},                    
+                };
+                cb_decision.DataSource = new BindingSource(userCache, null);
+                cb_decision.DisplayMember = "Key";
+                cb_decision.ValueMember = "Value";
+                cb_decision.SelectedIndex = 0;
+
+                ds_rescodes = Global.Global.ds_rescodes.Copy();
+                bs_res.DataSource = ds_rescodes.Tables["TT_RES"];
+                cbRes.SelectedIndex = -1;
+            
+                grp_initial.Enabled = AddNew;
+
+                NS_Conference.StrongTypesNS.ds_conference_lookupDataSet ds_diets = Proxy.ConferenceSystem.Get_Conference_Code_Descriptions();
+                bs_diets.DataSource = ds_diets.tt_diets;
+
+                SortedDictionary<string, string> userCache1 = new SortedDictionary<string, string>
+                {
+                    {"Breakfast", "B"},
+	                {"Lunch", "L"},
+	                {"Brunch","BL"},
+                    {"Supper", "S"}
+                };
+                cb_fn_time.DataSource = new BindingSource(userCache1, null);
+                cb_fn_time.DisplayMember = "Key";
+                cb_fn_time.ValueMember = "Value";
+                cb_fn_time.SelectedIndex = 1;
+
+                int x;
+                for (x = 1; x <= 5; x = x + 1) 
+                {
+                    cb_meal_cnt.Items.Add(x);
+                }
+                cb_meal_cnt.SelectedIndex = 0;
+                get_function_details();
+
+               
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+        }
+
+        private void get_function_details()
+        {
+            try
+            {
+
+                bool Submitted;
+                string feedback = Proxy.CateringSystem.get_a_function(AddNew, ReferenceNumber, TempRes, out ds_function, out Submitted);
+                if (feedback != "")
+                {
+                    MessageBox.Show(feedback, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Close();
+                }
+                else
+                {
+                    if (AddNew == false)
+                    {
+
+                        grp_initial.Enabled = false;
+                        dg_students.Columns[cn_attending.Name].ReadOnly = false;
+                        dg_students.Columns[cn_mealcnt.Name].ReadOnly = false;
+                        btn_cancel.Visible = false;
+                        btn_save.Visible = false;
+                        btn_update_details.Visible = true;
+                        pnl_details.Enabled = false;
+                        
+                        dg_students.Enabled = true;
+                        btn_register.Enabled = true;
+                        btn_exit.Enabled = true;
+                        btn_submit.Enabled = true;
+                    }
+                    else
+                    {
+                        btn_cancel.Visible = true;
+                        btn_save.Visible = true;
+                        btn_update_details.Visible = false;
+                        pnl_details.Enabled = true;
+                        
+                        dg_students.Enabled = false;
+                        btn_register.Enabled = false;
+                        btn_exit.Enabled = false;
+                        btn_submit.Enabled = false;                        
+
+                    }
+
+                    bs_function.DataSource = ds_function.tt_res_events;
+                    DataView dvStudents = new DataView(ds_function.tt_event_stu);
+                    dvStudents.Sort = "namestring";
+                    bs_students.DataSource = dvStudents;                 
+                    
+                    loaded = true;
+                    if (from_where == "Res")
+                    {
+                        cbRes.Enabled = cb_decision.Enabled = lbl_reason.Visible = txt_reason.Visible = txt_otherevents.Enabled = false;
+
+                        if (AddNew == false)
+                        {
+                            if (Submitted)  pnl_details.Enabled = dg_students.Enabled = pnl_buttons.Enabled = btn_submit.Enabled = false;
+                            else
+                            {
+                                pnl_details.Enabled = false;
+                                dg_students.Enabled = pnl_buttons.Enabled = btn_submit.Enabled = true;
+                                btn_submit.Text = "Submit Function";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        btn_submit.Text = "Update Function Status";
+                        if (AddNew) cbRes.Enabled = true;
+                        else cbRes.Enabled = false;
+                        cb_decision.Enabled = true;
+                       
+
+                        if (AddNew == false)
+                        {
+                            pnl_details.Enabled = false;
+                            dg_students.Enabled = pnl_buttons.Enabled = btn_submit.Enabled = true;                            
+                        }
+                    }
+
+                   
+                    
+
+                    if (FunctionStatus == "Processed") pnl_details.Enabled = dg_students.Enabled = pnl_buttons.Enabled = btn_submit.Enabled = false;
+
+                }
+             }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+        }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                IsValid = true;
+                valid_event();
+                if (IsValid)
+                {
+                    if (btn_submit.Text == "Submit Function")
+                    {
+                        if (MessageBox.Show("Please confirm that you wish to submit this function. Once submitted you will not be able to make any further changes. Do you want to continue?", "Confirm Event Details", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            string feedback = Proxy.CateringSystem.submit_function_details(ReferenceNumber);
+                            MessageBox.Show(feedback, "Confirm Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            if (!feedback.Contains("Error")) this.Close();
+                        }
+                    }
+                    else 
+                    {
+                        if (cb_decision.SelectedValue.ToString() == "X" & txt_reason.Text == string.Empty)
+                        {
+                            MessageBox.Show("Please enter reason for the decline decision", "Decline", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        if (cb_decision.SelectedValue.ToString() != "X") txt_reason.Text = string.Empty;
+
+
+                        string feedback = Proxy.CateringSystem.update_function_status(ReferenceNumber,cb_decision.SelectedValue.ToString(),txt_reason.Text);
+                        MessageBox.Show(feedback, "Update Function Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (!feedback.Contains("Error")) this.Close();
+                    }                    
+                }
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+        }
+
+        private void valid_event()
+        {
+            if (cbRes.SelectedIndex < 0)
+            {
+                IsValid = false;
+                ErrorString = "Please select Residence to continue";
+                return;
+            }
+
+
+            if (dte_reply_dte.Value >= dte_fn_dte.Value)
+            {
+                IsValid = false;
+                ErrorString = "Reply date should be before the Function date";
+                return;
+            }
+
+
+
+            if (txt_description.Text.ToString() == string.Empty)
+            {
+                IsValid = false;
+                ErrorString = "Please enter function details to proceed";
+                return;
+            }
+
+            if (cb_fn_time.SelectedIndex < 0)
+            {
+                IsValid = false;
+                ErrorString = "Please select function start time to proceed";
+                return;
+            }
+             
+
+        }
+
+        private void dg_students_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (loaded == true)
+                {
+                    if (dg_students.CurrentCell == null) return;
+
+                    if (dg_students.CurrentCell.OwningColumn.Name.Equals(cn_attending.Name) | dg_students.CurrentCell.OwningColumn.Name.Equals(cn_diet.Name) | dg_students.CurrentCell.OwningColumn.Name.Equals(cn_mealcnt.Name))
+                    {
+                        string tempstuno = dg_students[cn_stuno.Name, e.RowIndex].Value.ToString();
+                        bool tempattend = bool.Parse(dg_students[cn_attending.Name, e.RowIndex].Value.ToString());
+                        int tempcnt = int.Parse(dg_students[cn_mealcnt.Name, e.RowIndex].Value.ToString());
+                        string tempdiet = dg_students[cn_diet.Name, e.RowIndex].Value.ToString();
+
+                        Proxy.CateringSystem.update_function_register(ReferenceNumber, tempstuno, tempcnt, tempdiet, tempattend);
+
+
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+        }
+
+        private void dg_students_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dg_students.IsCurrentCellDirty && dg_students.CurrentCell.GetType().Equals(typeof(DataGridViewCheckBoxCell)))
+            {
+                dg_students.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string DefaultAttending = string.Empty;
+            if (ds_function.tt_res_events[0].default_attend) DefaultAttending = "Yes";
+            else DefaultAttending = "No";
+
+            FunctionReports frmreports = new FunctionReports("FunctionRegister", ReferenceNumber, txt_description.Text.ToString(), dte_fn_dte.Value, cb_fn_time.Text, dte_reply_dte.Value, cb_meal_cnt.Text.ToString(),DefaultAttending);
+            frmreports.Show();
+        }
+
+     
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_update_details_Click(object sender, EventArgs e)
+        {
+            btn_cancel.Visible = true;
+            btn_save.Visible = true;
+            btn_update_details.Visible = false;
+            pnl_details.Enabled = true;
+            dg_students.Enabled = false;
+            btn_submit.Enabled = false;
+            btn_register.Enabled = false;
+            btn_exit.Enabled = false;
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (AddNew == true) this.Close();
+                else
+                {
+                    string feedback = Proxy.CateringSystem.check_function_changes(ds_function);
+                    if (feedback == "") get_function_details();
+                    else
+                    {
+                        if (MessageBox.Show(feedback, "Unsaved Changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) get_function_details();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                IsValid = true;
+                valid_event();
+                if (IsValid)
+                {
+                 
+                    if (AddNew )
+                    {
+                         DataRow newrow = ds_function.TT_RES_LIST.NewRow();
+                         newrow["res"] = ds_function.tt_res_events[0].res;
+                         ds_function.TT_RES_LIST.Rows.Add(newrow);
+
+                         if (chk_other_res.Checked)
+                         {
+                             OtherResidences frmRes = new OtherResidences();
+                             frmRes.ShowDialog();
+                             if (frmRes.Continue)
+                             {
+                                 NS_Catering.StrongTypesNS.ds_res_functionsDataSet ds_newlist = frmRes.ds_res_list;
+
+                                 foreach (NS_Catering.StrongTypesNS.ds_res_functionsDataSet.TT_RES_LISTRow NewResRow in ds_newlist.TT_RES_LIST)
+                                 {
+                                     DataRow newrow1 = ds_function.TT_RES_LIST.NewRow();
+                                     newrow1["res"] = NewResRow.RES;
+                                     ds_function.TT_RES_LIST.Rows.Add(newrow1);
+                                 }                                
+                             }
+                         }
+                    }
+                    string feedback = Proxy.CateringSystem.update_function(AddNew, ds_function, out ReferenceNumber);
+                    MessageBox.Show(feedback, "Update Function Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (!feedback.Contains("Error"))
+                    {
+                        AddNew = false;
+                        get_function_details();
+                    }
+                }
+                else MessageBox.Show(ErrorString, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+        }
+
+        private void cb_decision_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_decision.SelectedIndex > -1)
+            {
+                if (cb_decision.SelectedValue.ToString() == "X") lbl_reason.Visible = txt_reason.Visible = true;
+                else lbl_reason.Visible = txt_reason.Visible = false;
+            }
+        }
+
+        private void chk_everyone_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chk_everyone.Checked)
+            {
+                chk_hall.Checked = true;
+                chk_house.Checked = true;
+                chk_first.Checked = true;
+                chk_returners.Checked = true;
+
+                chk_hall.Enabled = false;
+                chk_house.Enabled = false;
+                chk_first.Enabled = false;
+                chk_returners.Enabled = false;
+            }
+            else
+            {
+                chk_hall.Enabled = true;
+                chk_house.Enabled = true;
+                chk_first.Enabled = true;
+                chk_returners.Enabled = true;
+            }
+        }
+        
+    }
+}

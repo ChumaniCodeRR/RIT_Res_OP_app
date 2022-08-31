@@ -1,0 +1,521 @@
+﻿namespace Res_System
+{
+    partial class Contact
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label eMPLOYEE_NOLabel;
+            System.Windows.Forms.Label tYPELabel;
+            System.Windows.Forms.Label cELL_PHONELabel;
+            System.Windows.Forms.Label oFFICE_NOLabel;
+            System.Windows.Forms.Label hOME_NOLabel;
+            System.Windows.Forms.Label rESLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact));
+            this.cb_hall = new System.Windows.Forms.ComboBox();
+            this.bs_hall = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_RESCODESDataSet = new NS_System.StrongTypesNS.DS_RESCODESDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.eMPLOYEENODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tYPEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hALLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rESNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tYPESTRDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oFFICENODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hOMENODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cELLPHONEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tT_CONTACTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_GENDataSet = new NS_ResSystem.StrongTypesNS.DS_GENDataSet();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btn_del = new System.Windows.Forms.Button();
+            this.cb_res = new System.Windows.Forms.ComboBox();
+            this.tT_RESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txt_home = new System.Windows.Forms.TextBox();
+            this.txt_office = new System.Windows.Forms.TextBox();
+            this.txt_cell = new System.Windows.Forms.TextBox();
+            this.cb_role = new System.Windows.Forms.ComboBox();
+            this.tT_GENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txt_employee = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            eMPLOYEE_NOLabel = new System.Windows.Forms.Label();
+            tYPELabel = new System.Windows.Forms.Label();
+            cELL_PHONELabel = new System.Windows.Forms.Label();
+            oFFICE_NOLabel = new System.Windows.Forms.Label();
+            hOME_NOLabel = new System.Windows.Forms.Label();
+            rESLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bs_hall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_RESCODESDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tT_CONTACTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_GENDataSet)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tT_RESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tT_GENBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // eMPLOYEE_NOLabel
+            // 
+            eMPLOYEE_NOLabel.AutoSize = true;
+            eMPLOYEE_NOLabel.Location = new System.Drawing.Point(9, 42);
+            eMPLOYEE_NOLabel.Name = "eMPLOYEE_NOLabel";
+            eMPLOYEE_NOLabel.Size = new System.Drawing.Size(118, 13);
+            eMPLOYEE_NOLabel.TabIndex = 1;
+            eMPLOYEE_NOLabel.Text = "Staff Employee Number";
+            // 
+            // tYPELabel
+            // 
+            tYPELabel.AutoSize = true;
+            tYPELabel.Location = new System.Drawing.Point(344, 45);
+            tYPELabel.Name = "tYPELabel";
+            tYPELabel.Size = new System.Drawing.Size(32, 13);
+            tYPELabel.TabIndex = 3;
+            tYPELabel.Text = "Role:";
+            // 
+            // cELL_PHONELabel
+            // 
+            cELL_PHONELabel.AutoSize = true;
+            cELL_PHONELabel.Location = new System.Drawing.Point(563, 72);
+            cELL_PHONELabel.Name = "cELL_PHONELabel";
+            cELL_PHONELabel.Size = new System.Drawing.Size(61, 13);
+            cELL_PHONELabel.TabIndex = 5;
+            cELL_PHONELabel.Text = "Cell Phone:";
+            // 
+            // oFFICE_NOLabel
+            // 
+            oFFICE_NOLabel.AutoSize = true;
+            oFFICE_NOLabel.Location = new System.Drawing.Point(15, 69);
+            oFFICE_NOLabel.Name = "oFFICE_NOLabel";
+            oFFICE_NOLabel.Size = new System.Drawing.Size(112, 13);
+            oFFICE_NOLabel.TabIndex = 7;
+            oFFICE_NOLabel.Text = "Office Phone Number:";
+            // 
+            // hOME_NOLabel
+            // 
+            hOME_NOLabel.AutoSize = true;
+            hOME_NOLabel.Location = new System.Drawing.Point(298, 72);
+            hOME_NOLabel.Name = "hOME_NOLabel";
+            hOME_NOLabel.Size = new System.Drawing.Size(78, 13);
+            hOME_NOLabel.TabIndex = 9;
+            hOME_NOLabel.Text = "Home Number:";
+            // 
+            // rESLabel
+            // 
+            rESLabel.AutoSize = true;
+            rESLabel.Location = new System.Drawing.Point(563, 45);
+            rESLabel.Name = "rESLabel";
+            rESLabel.Size = new System.Drawing.Size(61, 13);
+            rESLabel.TabIndex = 11;
+            rESLabel.Text = "Residence:";
+            // 
+            // cb_hall
+            // 
+            this.cb_hall.DataSource = this.bs_hall;
+            this.cb_hall.DisplayMember = "DETAIL";
+            this.cb_hall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_hall.FormattingEnabled = true;
+            this.cb_hall.Location = new System.Drawing.Point(378, 12);
+            this.cb_hall.Name = "cb_hall";
+            this.cb_hall.Size = new System.Drawing.Size(195, 21);
+            this.cb_hall.TabIndex = 0;
+            this.cb_hall.ValueMember = "SHALL";
+            this.cb_hall.SelectedIndexChanged += new System.EventHandler(this.cb_hall_SelectedIndexChanged);
+            // 
+            // bs_hall
+            // 
+            this.bs_hall.DataMember = "TT_HALL";
+            this.bs_hall.DataSource = this.dS_RESCODESDataSet;
+            // 
+            // dS_RESCODESDataSet
+            // 
+            this.dS_RESCODESDataSet.DataSetName = "DS_RESCODESDataSet";
+            this.dS_RESCODESDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(271, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Please select a hall:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.eMPLOYEENODataGridViewTextBoxColumn,
+            this.nAMEDataGridViewTextBoxColumn,
+            this.tYPEDataGridViewTextBoxColumn,
+            this.hALLDataGridViewTextBoxColumn,
+            this.rESDataGridViewTextBoxColumn,
+            this.rESNAMEDataGridViewTextBoxColumn,
+            this.tYPESTRDataGridViewTextBoxColumn,
+            this.Email,
+            this.oFFICENODataGridViewTextBoxColumn,
+            this.hOMENODataGridViewTextBoxColumn,
+            this.cELLPHONEDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tT_CONTACTBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 56);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(818, 245);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // eMPLOYEENODataGridViewTextBoxColumn
+            // 
+            this.eMPLOYEENODataGridViewTextBoxColumn.DataPropertyName = "EMPLOYEE_NO";
+            this.eMPLOYEENODataGridViewTextBoxColumn.HeaderText = "EMPLOYEE_NO";
+            this.eMPLOYEENODataGridViewTextBoxColumn.Name = "eMPLOYEENODataGridViewTextBoxColumn";
+            this.eMPLOYEENODataGridViewTextBoxColumn.ReadOnly = true;
+            this.eMPLOYEENODataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nAMEDataGridViewTextBoxColumn
+            // 
+            this.nAMEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.nAMEDataGridViewTextBoxColumn.DataPropertyName = "NAME";
+            this.nAMEDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nAMEDataGridViewTextBoxColumn.Name = "nAMEDataGridViewTextBoxColumn";
+            this.nAMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nAMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nAMEDataGridViewTextBoxColumn.Width = 41;
+            // 
+            // tYPEDataGridViewTextBoxColumn
+            // 
+            this.tYPEDataGridViewTextBoxColumn.DataPropertyName = "TYPE";
+            this.tYPEDataGridViewTextBoxColumn.HeaderText = "TYPE";
+            this.tYPEDataGridViewTextBoxColumn.Name = "tYPEDataGridViewTextBoxColumn";
+            this.tYPEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tYPEDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // hALLDataGridViewTextBoxColumn
+            // 
+            this.hALLDataGridViewTextBoxColumn.DataPropertyName = "HALL";
+            this.hALLDataGridViewTextBoxColumn.HeaderText = "HALL";
+            this.hALLDataGridViewTextBoxColumn.Name = "hALLDataGridViewTextBoxColumn";
+            this.hALLDataGridViewTextBoxColumn.ReadOnly = true;
+            this.hALLDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rESDataGridViewTextBoxColumn
+            // 
+            this.rESDataGridViewTextBoxColumn.DataPropertyName = "RES";
+            this.rESDataGridViewTextBoxColumn.HeaderText = "RES";
+            this.rESDataGridViewTextBoxColumn.Name = "rESDataGridViewTextBoxColumn";
+            this.rESDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rESDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rESNAMEDataGridViewTextBoxColumn
+            // 
+            this.rESNAMEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.rESNAMEDataGridViewTextBoxColumn.DataPropertyName = "RESNAME";
+            this.rESNAMEDataGridViewTextBoxColumn.HeaderText = "Residence";
+            this.rESNAMEDataGridViewTextBoxColumn.Name = "rESNAMEDataGridViewTextBoxColumn";
+            this.rESNAMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rESNAMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // tYPESTRDataGridViewTextBoxColumn
+            // 
+            this.tYPESTRDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.tYPESTRDataGridViewTextBoxColumn.DataPropertyName = "TYPESTR";
+            this.tYPESTRDataGridViewTextBoxColumn.HeaderText = "Role";
+            this.tYPESTRDataGridViewTextBoxColumn.Name = "tYPESTRDataGridViewTextBoxColumn";
+            this.tYPESTRDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tYPESTRDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.tYPESTRDataGridViewTextBoxColumn.Width = 35;
+            // 
+            // Email
+            // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Email.DataPropertyName = "email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Email.Width = 38;
+            // 
+            // oFFICENODataGridViewTextBoxColumn
+            // 
+            this.oFFICENODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.oFFICENODataGridViewTextBoxColumn.DataPropertyName = "OFFICE_NO";
+            this.oFFICENODataGridViewTextBoxColumn.HeaderText = "Office Number";
+            this.oFFICENODataGridViewTextBoxColumn.Name = "oFFICENODataGridViewTextBoxColumn";
+            this.oFFICENODataGridViewTextBoxColumn.ReadOnly = true;
+            this.oFFICENODataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.oFFICENODataGridViewTextBoxColumn.Width = 81;
+            // 
+            // hOMENODataGridViewTextBoxColumn
+            // 
+            this.hOMENODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.hOMENODataGridViewTextBoxColumn.DataPropertyName = "HOME_NO";
+            this.hOMENODataGridViewTextBoxColumn.HeaderText = "Home Phone";
+            this.hOMENODataGridViewTextBoxColumn.Name = "hOMENODataGridViewTextBoxColumn";
+            this.hOMENODataGridViewTextBoxColumn.ReadOnly = true;
+            this.hOMENODataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.hOMENODataGridViewTextBoxColumn.Width = 75;
+            // 
+            // cELLPHONEDataGridViewTextBoxColumn
+            // 
+            this.cELLPHONEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.cELLPHONEDataGridViewTextBoxColumn.DataPropertyName = "CELL_PHONE";
+            this.cELLPHONEDataGridViewTextBoxColumn.HeaderText = "Cell Phone";
+            this.cELLPHONEDataGridViewTextBoxColumn.Name = "cELLPHONEDataGridViewTextBoxColumn";
+            this.cELLPHONEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cELLPHONEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.cELLPHONEDataGridViewTextBoxColumn.Width = 64;
+            // 
+            // tT_CONTACTBindingSource
+            // 
+            this.tT_CONTACTBindingSource.DataMember = "TT_CONTACT";
+            this.tT_CONTACTBindingSource.DataSource = this.dS_GENDataSet;
+            // 
+            // dS_GENDataSet
+            // 
+            this.dS_GENDataSet.DataSetName = "DS_GENDataSet";
+            this.dS_GENDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 13);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Contact Details:";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btn_add);
+            this.panel1.Controls.Add(this.btnsave);
+            this.panel1.Controls.Add(this.btn_del);
+            this.panel1.Controls.Add(rESLabel);
+            this.panel1.Controls.Add(this.cb_res);
+            this.panel1.Controls.Add(hOME_NOLabel);
+            this.panel1.Controls.Add(this.txt_home);
+            this.panel1.Controls.Add(oFFICE_NOLabel);
+            this.panel1.Controls.Add(this.txt_office);
+            this.panel1.Controls.Add(cELL_PHONELabel);
+            this.panel1.Controls.Add(this.txt_cell);
+            this.panel1.Controls.Add(tYPELabel);
+            this.panel1.Controls.Add(this.cb_role);
+            this.panel1.Controls.Add(eMPLOYEE_NOLabel);
+            this.panel1.Controls.Add(this.txt_employee);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Enabled = false;
+            this.panel1.Location = new System.Drawing.Point(15, 307);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(817, 150);
+            this.panel1.TabIndex = 29;
+            // 
+            // btn_add
+            // 
+            this.btn_add.Location = new System.Drawing.Point(461, 113);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(110, 23);
+            this.btn_add.TabIndex = 8;
+            this.btn_add.Text = "Add New Contact";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // btnsave
+            // 
+            this.btnsave.Location = new System.Drawing.Point(357, 113);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(98, 23);
+            this.btnsave.TabIndex = 7;
+            this.btnsave.Text = "Save Contact";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // btn_del
+            // 
+            this.btn_del.Location = new System.Drawing.Point(241, 113);
+            this.btn_del.Name = "btn_del";
+            this.btn_del.Size = new System.Drawing.Size(110, 23);
+            this.btn_del.TabIndex = 9;
+            this.btn_del.Text = "Delete Contact";
+            this.btn_del.UseVisualStyleBackColor = true;
+            this.btn_del.Click += new System.EventHandler(this.btn_del_Click);
+            // 
+            // cb_res
+            // 
+            this.cb_res.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tT_CONTACTBindingSource, "RES", true));
+            this.cb_res.DataSource = this.tT_RESBindingSource;
+            this.cb_res.DisplayMember = "RESNAME";
+            this.cb_res.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_res.FormattingEnabled = true;
+            this.cb_res.Location = new System.Drawing.Point(630, 42);
+            this.cb_res.Name = "cb_res";
+            this.cb_res.Size = new System.Drawing.Size(180, 21);
+            this.cb_res.TabIndex = 3;
+            this.cb_res.ValueMember = "RES";
+            // 
+            // tT_RESBindingSource
+            // 
+            this.tT_RESBindingSource.DataMember = "TT_RES";
+            this.tT_RESBindingSource.DataSource = this.dS_RESCODESDataSet;
+            // 
+            // txt_home
+            // 
+            this.txt_home.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tT_CONTACTBindingSource, "HOME_NO", true));
+            this.txt_home.Location = new System.Drawing.Point(382, 69);
+            this.txt_home.Name = "txt_home";
+            this.txt_home.Size = new System.Drawing.Size(121, 20);
+            this.txt_home.TabIndex = 5;
+            // 
+            // txt_office
+            // 
+            this.txt_office.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tT_CONTACTBindingSource, "OFFICE_NO", true));
+            this.txt_office.Location = new System.Drawing.Point(133, 66);
+            this.txt_office.Name = "txt_office";
+            this.txt_office.Size = new System.Drawing.Size(126, 20);
+            this.txt_office.TabIndex = 4;
+            // 
+            // txt_cell
+            // 
+            this.txt_cell.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tT_CONTACTBindingSource, "CELL_PHONE", true));
+            this.txt_cell.Location = new System.Drawing.Point(630, 69);
+            this.txt_cell.Name = "txt_cell";
+            this.txt_cell.Size = new System.Drawing.Size(125, 20);
+            this.txt_cell.TabIndex = 6;
+            // 
+            // cb_role
+            // 
+            this.cb_role.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tT_CONTACTBindingSource, "TYPE", true));
+            this.cb_role.DataSource = this.tT_GENBindingSource;
+            this.cb_role.DisplayMember = "DESCRIP";
+            this.cb_role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_role.FormattingEnabled = true;
+            this.cb_role.Location = new System.Drawing.Point(382, 42);
+            this.cb_role.Name = "cb_role";
+            this.cb_role.Size = new System.Drawing.Size(121, 21);
+            this.cb_role.TabIndex = 2;
+            this.cb_role.ValueMember = "CODE";
+            // 
+            // tT_GENBindingSource
+            // 
+            this.tT_GENBindingSource.DataMember = "TT_GEN";
+            this.tT_GENBindingSource.DataSource = this.dS_RESCODESDataSet;
+            // 
+            // txt_employee
+            // 
+            this.txt_employee.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tT_CONTACTBindingSource, "EMPLOYEE_NO", true));
+            this.txt_employee.Location = new System.Drawing.Point(133, 39);
+            this.txt_employee.Name = "txt_employee";
+            this.txt_employee.ReadOnly = true;
+            this.txt_employee.Size = new System.Drawing.Size(126, 20);
+            this.txt_employee.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(256, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Hall Administrators - Update Contact Details";
+            // 
+            // Contact
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(847, 465);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cb_hall);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Contact";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Contact Information";
+            this.Load += new System.EventHandler(this.Contact_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bs_hall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_RESCODESDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tT_CONTACTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_GENDataSet)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tT_RESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tT_GENBindingSource)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ComboBox cb_hall;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.BindingSource tT_CONTACTBindingSource;
+        private NS_ResSystem.StrongTypesNS.DS_GENDataSet dS_GENDataSet;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_home;
+        private System.Windows.Forms.TextBox txt_office;
+        private System.Windows.Forms.TextBox txt_cell;
+        private System.Windows.Forms.ComboBox cb_role;
+        private System.Windows.Forms.TextBox txt_employee;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Button btn_del;
+        private System.Windows.Forms.ComboBox cb_res;
+        private System.Windows.Forms.BindingSource tT_GENBindingSource;
+        private NS_System.StrongTypesNS.DS_RESCODESDataSet dS_RESCODESDataSet;
+        private System.Windows.Forms.BindingSource tT_RESBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eMPLOYEENODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tYPEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hALLDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rESDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rESNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tYPESTRDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oFFICENODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hOMENODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cELLPHONEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource bs_hall;
+    }
+}

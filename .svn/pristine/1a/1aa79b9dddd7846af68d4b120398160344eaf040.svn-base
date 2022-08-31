@@ -1,0 +1,218 @@
+﻿namespace Res_System
+{
+    partial class Function
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Function));
+            this.dt_function = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cb_function_time = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_description = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cb_type = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dt_complete_by = new System.Windows.Forms.DateTimePicker();
+            this.cb_building = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
+            // 
+            // dt_function
+            // 
+            this.dt_function.Location = new System.Drawing.Point(154, 5);
+            this.dt_function.Name = "dt_function";
+            this.dt_function.Size = new System.Drawing.Size(168, 20);
+            this.dt_function.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(59, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Date of Function:";
+            // 
+            // cb_function_time
+            // 
+            this.cb_function_time.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cb_function_time.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb_function_time.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_function_time.FormattingEnabled = true;
+            this.cb_function_time.Items.AddRange(new object[] {
+            "Breakfast",
+            "Lunch",
+            "Dinner"});
+            this.cb_function_time.Location = new System.Drawing.Point(154, 31);
+            this.cb_function_time.Name = "cb_function_time";
+            this.cb_function_time.Size = new System.Drawing.Size(121, 21);
+            this.cb_function_time.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(71, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Function Time:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(85, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Description:";
+            // 
+            // txt_description
+            // 
+            this.txt_description.Location = new System.Drawing.Point(154, 84);
+            this.txt_description.Name = "txt_description";
+            this.txt_description.Size = new System.Drawing.Size(200, 20);
+            this.txt_description.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(58, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Number of Meals:";
+            // 
+            // cb_type
+            // 
+            this.cb_type.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cb_type.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_type.FormattingEnabled = true;
+            this.cb_type.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cb_type.Location = new System.Drawing.Point(154, 110);
+            this.cb_type.Name = "cb_type";
+            this.cb_type.Size = new System.Drawing.Size(44, 21);
+            this.cb_type.TabIndex = 6;
+            this.cb_type.SelectedIndexChanged += new System.EventHandler(this.cb_type_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(65, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Split by building:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(144, 170);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Continue";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(11, 61);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Date list must be filled in by:";
+            // 
+            // dt_complete_by
+            // 
+            this.dt_complete_by.Location = new System.Drawing.Point(154, 58);
+            this.dt_complete_by.Name = "dt_complete_by";
+            this.dt_complete_by.Size = new System.Drawing.Size(172, 20);
+            this.dt_complete_by.TabIndex = 13;
+            // 
+            // cb_building
+            // 
+            this.cb_building.AutoSize = true;
+            this.cb_building.Checked = true;
+            this.cb_building.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_building.Location = new System.Drawing.Point(154, 143);
+            this.cb_building.Name = "cb_building";
+            this.cb_building.Size = new System.Drawing.Size(15, 14);
+            this.cb_building.TabIndex = 14;
+            this.cb_building.UseVisualStyleBackColor = true;
+            // 
+            // Function
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(362, 205);
+            this.Controls.Add(this.cb_building);
+            this.Controls.Add(this.dt_complete_by);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cb_type);
+            this.Controls.Add(this.txt_description);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cb_function_time);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dt_function);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Function";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Function";
+            this.Load += new System.EventHandler(this.Function_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DateTimePicker dt_function;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cb_function_time;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_description;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cb_type;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dt_complete_by;
+        private System.Windows.Forms.CheckBox cb_building;
+    }
+}

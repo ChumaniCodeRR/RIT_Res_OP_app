@@ -1,0 +1,17 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>c:\Program Files\Business Objects\Common\2.8\managed\</ReferencePath>
+    <PublishUrlHistory>R:\publish\Res_System\|R:\publish\RAS\|publish\</PublishUrlHistory>
+    <InstallUrlHistory>https://dmuapps.ru.ac.za/publish/Res_System/|https://dmuapps.ru.ac.za/publish/ResSystem/|https://dmuapps.ru.ac.za/publish/Res System/|https://dmuapps.ru.ac.za/publish/RAS/|https://mealserver.ru.ac.za/publish/RAS/</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>

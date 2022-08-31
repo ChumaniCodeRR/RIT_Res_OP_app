@@ -1,0 +1,94 @@
+﻿namespace Res_System
+{
+    partial class StudentReports
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.cb_student = new System.Windows.Forms.ComboBox();
+            this.lbl_stuname = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // cb_student
+            // 
+            this.cb_student.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cb_student.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb_student.DisplayMember = "namestr";
+            this.cb_student.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_student.FormattingEnabled = true;
+            this.cb_student.Location = new System.Drawing.Point(152, 21);
+            this.cb_student.Name = "cb_student";
+            this.cb_student.Size = new System.Drawing.Size(229, 21);
+            this.cb_student.TabIndex = 4;
+            this.cb_student.ValueMember = "stuno";
+            this.cb_student.Visible = false;
+            // 
+            // lbl_stuname
+            // 
+            this.lbl_stuname.AutoSize = true;
+            this.lbl_stuname.Location = new System.Drawing.Point(64, 24);
+            this.lbl_stuname.Name = "lbl_stuname";
+            this.lbl_stuname.Size = new System.Drawing.Size(83, 13);
+            this.lbl_stuname.TabIndex = 3;
+            this.lbl_stuname.Text = "Students Name:";
+            this.lbl_stuname.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(185, 48);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Proceed";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // StudentReports
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(445, 78);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cb_student);
+            this.Controls.Add(this.lbl_stuname);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "StudentReports";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Select A Student";
+            this.Load += new System.EventHandler(this.StudentReports_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ComboBox cb_student;
+        private System.Windows.Forms.Label lbl_stuname;
+        private System.Windows.Forms.Button button1;
+    }
+}

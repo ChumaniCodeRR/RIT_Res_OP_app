@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Student System">
+</Property><Property Name="Solution File" Value="Q:\gui\c#\Student System\Student System.sln">
+</Property><Property Name="User Options File" Value="Q:\gui\c#\Student System\Student System.suo">
+</Property><Property Name="Date" Value="19 November 2009">
+</Property><Property Name="Time" Value="09:51 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Student System.sln" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Student System.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Student System.suo" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Student System.suo">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Student System.csproj" Description="Project file successfully backed up as Q:\gui\c#\Student System\Backup\Student System.csproj">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Student System.csproj.user" Description="Project user file successfully backed up as Q:\gui\c#\Student System\Backup\Student System.csproj.user">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Academic Registration.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Academic Registration.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Academic Registration.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Academic Registration.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Form1.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Form1.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Global.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Global.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Program.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Student Search.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Student Search.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Student Search.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Student Search.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentAccount.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentAccount.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentAccount.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentAccount.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentResults.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentResults.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentResults.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentResults.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentsPersonalDetails.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentsPersonalDetails.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentsPersonalDetails.Designer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentsPersonalDetails.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Properties\Settings.settings" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Resources\crestWL-h.gif" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Resources\crestWL-h.gif">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Resources\crest.bmp" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Resources\crest.bmp">
+</Event><Event ErrorLevel="0" Project="Student System" Source="app.config" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Resources\no_photo.jpg" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Resources\no_photo.jpg">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Academic Registration.resx" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Academic Registration.resx">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Form1.resx" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Properties\Resources.resx" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Student Search.resx" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Student Search.resx">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentAccount.resx" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentAccount.resx">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentResults.resx" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentResults.resx">
+</Event><Event ErrorLevel="0" Project="Student System" Source="StudentsPersonalDetails.resx" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\StudentsPersonalDetails.resx">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Properties\app.manifest" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\Properties\app.manifest">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Student System.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Student System" Source="Student System.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="AppServer" Source="..\AppServer\AppServer.csproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="AppServer" Source="..\AppServer\AppServer.csproj" Description="Project file successfully backed up as Q:\gui\c#\Student System\Backup\AppServer\AppServer.csproj">
+</Event><Event ErrorLevel="0" Project="AppServer" Source="..\AppServer\AppServer.csproj.user" Description="Project user file successfully backed up as Q:\gui\c#\Student System\Backup\AppServer\AppServer.csproj.user">
+</Event><Event ErrorLevel="0" Project="AppServer" Source="..\AppServer\AppServer.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\AppServer\AppServer.cs">
+</Event><Event ErrorLevel="0" Project="AppServer" Source="..\AppServer\Properties\AssemblyInfo.cs" Description="File successfully backed up as Q:\gui\c#\Student System\Backup\AppServer\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AppServer" Source="..\AppServer\AppServer.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="AppServer" Source="..\AppServer\AppServer.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="Student System.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Student System.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Student System" Source="Student System.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

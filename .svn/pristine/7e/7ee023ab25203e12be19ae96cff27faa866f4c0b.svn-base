@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Utilities;
+
+namespace Res_System.Updates.ResEvents
+{
+    public partial class ResFunctions : Form
+    {
+        int tempres;
+        DataView dv_list;
+
+        public ResFunctions(int tempres)
+        {
+            InitializeComponent();
+            this.tempres = tempres;
+        }
+
+        private void ResFunctions_Load(object sender, EventArgs e)
+        {
+            refresh_data();
+        }
+
+        private void refresh_data()
+        {
+            try
+            {
+                NS_Catering.StrongTypesNS.ds_res_functionsDataSet ds_functions = Proxy.CateringSystem.get_res_functions(tempres);
+                dv_list = new DataView(ds_functions.tt_res_events);
+               
+                bs_functions.DataSource = dv_list;
+                filter();
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            EventScreen frmEvent = new EventScreen("Res",true, 0, tempres);
+            frmEvent.ShowDialog();
+            refresh_data();
+        }
+
+        private void dg_functions_DoubleClick(object sender, EventArgs e)
+        {
+            if (dg_functions.SelectedRows.Count > 0)
+            {
+                int ReferenceNumber = int.Parse(dg_functions.SelectedRows[0].Cells[cn_folio.Name].Value.ToString());
+                EventScreen frmEvent = new EventScreen("Res",false, ReferenceNumber, this.tempres);
+                frmEvent.ShowDialog();
+                refresh_data();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dg_functions.SelectedRows.Count > 0)
+                {
+                    if (dg_functions.SelectedRows[0].Cells[cn_submitdte.Name].Value.ToString() == string.Empty)
+                    {
+                        if (MessageBox.Show("This will parmanetly delete this function and all its related meal bookings, are you sure? ", "Delete Function", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            int ReferenceNumber = int.Parse(dg_functions.SelectedRows[0].Cells[cn_folio.Name].Value.ToString());
+                            string feedback = Proxy.CateringSystem.delete_res_function(ReferenceNumber);
+                            if (feedback != "") MessageBox.Show(feedback, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            else refresh_data();
+                        }
+                    }
+                    else MessageBox.Show("Error - You cannot delete a function that has already been submitted", "Delete Function", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.Catering, ex);
+            }
+        }
+
+        private void filter()
+        {
+            if (dv_list != null)
+            {
+                dv_list.RowFilter = "descrip like '*" + txt_filter_description.Text.ToString() + "*'";
+                dv_list.Sort = "fn_dte desc";
+                bs_functions.DataSource = dv_list;
+            }
+
+        }
+
+        private void txt_filter_description_TextChanged(object sender, EventArgs e)
+        {
+            filter();
+        }
+    }
+}

@@ -1,0 +1,324 @@
+﻿namespace Res_System.Updates.ResEvents
+{
+    partial class ResFunctions
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResFunctions));
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.bs_functions = new System.Windows.Forms.BindingSource(this.components);
+            this.dg_functions = new CustomDataGridView();
+            this.fndteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fntimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.compDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.confirmationdteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.defaultattendDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dependantsDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.cn_folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mealchangeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.mealcntDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.replybyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cn_submitdte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wardenDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_filter_description = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bs_functions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_functions)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(350, 536);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 13);
+            this.label2.TabIndex = 71;
+            this.label2.Text = "Double Click Function Above To Edit";
+            // 
+            // btn_add
+            // 
+            this.btn_add.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_add.Location = new System.Drawing.Point(332, 552);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(93, 23);
+            this.btn_add.TabIndex = 70;
+            this.btn_add.Text = "Add Function";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button2.Location = new System.Drawing.Point(431, 552);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 23);
+            this.button2.TabIndex = 72;
+            this.button2.Text = "Delete Function";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // bs_functions
+            // 
+            this.bs_functions.DataSource = typeof(NS_Catering.StrongTypesNS.ds_res_functionsDataSet.tt_res_eventsDataTable);
+            // 
+            // dg_functions
+            // 
+            this.dg_functions.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.dg_functions.AllowUserToAddRows = false;
+            this.dg_functions.AllowUserToDeleteRows = false;
+            this.dg_functions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_functions.AutoGenerateColumns = false;
+            this.dg_functions.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dg_functions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_functions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.fndteDataGridViewTextBoxColumn,
+            this.descripDataGridViewTextBoxColumn,
+            this.fntimeDataGridViewTextBoxColumn,
+            this.compDataGridViewCheckBoxColumn,
+            this.confirmationdteDataGridViewTextBoxColumn,
+            this.defaultattendDataGridViewCheckBoxColumn,
+            this.dependantsDataGridViewCheckBoxColumn,
+            this.cn_folio,
+            this.mealchangeDataGridViewCheckBoxColumn,
+            this.mealcntDataGridViewTextBoxColumn,
+            this.replybyDataGridViewTextBoxColumn,
+            this.resDataGridViewTextBoxColumn,
+            this.cn_submitdte,
+            this.wardenDataGridViewCheckBoxColumn});
+            this.dg_functions.DataSource = this.bs_functions;
+            this.dg_functions.Location = new System.Drawing.Point(2, 35);
+            this.dg_functions.MultiSelect = false;
+            this.dg_functions.Name = "dg_functions";
+            this.dg_functions.ReadOnly = true;
+            this.dg_functions.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_functions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dg_functions.Size = new System.Drawing.Size(860, 498);
+            this.dg_functions.TabIndex = 66;
+            this.dg_functions.DoubleClick += new System.EventHandler(this.dg_functions_DoubleClick);
+            // 
+            // fndteDataGridViewTextBoxColumn
+            // 
+            this.fndteDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.fndteDataGridViewTextBoxColumn.DataPropertyName = "fn_dte";
+            this.fndteDataGridViewTextBoxColumn.HeaderText = "Function Date";
+            this.fndteDataGridViewTextBoxColumn.Name = "fndteDataGridViewTextBoxColumn";
+            this.fndteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fndteDataGridViewTextBoxColumn.Width = 99;
+            // 
+            // descripDataGridViewTextBoxColumn
+            // 
+            this.descripDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descripDataGridViewTextBoxColumn.DataPropertyName = "descrip";
+            this.descripDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descripDataGridViewTextBoxColumn.Name = "descripDataGridViewTextBoxColumn";
+            this.descripDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fntimeDataGridViewTextBoxColumn
+            // 
+            this.fntimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.fntimeDataGridViewTextBoxColumn.DataPropertyName = "fn_time";
+            this.fntimeDataGridViewTextBoxColumn.HeaderText = "Function Time";
+            this.fntimeDataGridViewTextBoxColumn.Name = "fntimeDataGridViewTextBoxColumn";
+            this.fntimeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fntimeDataGridViewTextBoxColumn.Width = 99;
+            // 
+            // compDataGridViewCheckBoxColumn
+            // 
+            this.compDataGridViewCheckBoxColumn.DataPropertyName = "comp";
+            this.compDataGridViewCheckBoxColumn.HeaderText = "comp";
+            this.compDataGridViewCheckBoxColumn.Name = "compDataGridViewCheckBoxColumn";
+            this.compDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.compDataGridViewCheckBoxColumn.Visible = false;
+            // 
+            // confirmationdteDataGridViewTextBoxColumn
+            // 
+            this.confirmationdteDataGridViewTextBoxColumn.DataPropertyName = "confirmation_dte";
+            this.confirmationdteDataGridViewTextBoxColumn.HeaderText = "confirmation_dte";
+            this.confirmationdteDataGridViewTextBoxColumn.Name = "confirmationdteDataGridViewTextBoxColumn";
+            this.confirmationdteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.confirmationdteDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // defaultattendDataGridViewCheckBoxColumn
+            // 
+            this.defaultattendDataGridViewCheckBoxColumn.DataPropertyName = "default_attend";
+            this.defaultattendDataGridViewCheckBoxColumn.HeaderText = "default_attend";
+            this.defaultattendDataGridViewCheckBoxColumn.Name = "defaultattendDataGridViewCheckBoxColumn";
+            this.defaultattendDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.defaultattendDataGridViewCheckBoxColumn.Visible = false;
+            // 
+            // dependantsDataGridViewCheckBoxColumn
+            // 
+            this.dependantsDataGridViewCheckBoxColumn.DataPropertyName = "dependants";
+            this.dependantsDataGridViewCheckBoxColumn.HeaderText = "dependants";
+            this.dependantsDataGridViewCheckBoxColumn.Name = "dependantsDataGridViewCheckBoxColumn";
+            this.dependantsDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.dependantsDataGridViewCheckBoxColumn.Visible = false;
+            // 
+            // cn_folio
+            // 
+            this.cn_folio.DataPropertyName = "folio";
+            this.cn_folio.HeaderText = "folio";
+            this.cn_folio.Name = "cn_folio";
+            this.cn_folio.ReadOnly = true;
+            this.cn_folio.Visible = false;
+            // 
+            // mealchangeDataGridViewCheckBoxColumn
+            // 
+            this.mealchangeDataGridViewCheckBoxColumn.DataPropertyName = "meal_change";
+            this.mealchangeDataGridViewCheckBoxColumn.HeaderText = "meal_change";
+            this.mealchangeDataGridViewCheckBoxColumn.Name = "mealchangeDataGridViewCheckBoxColumn";
+            this.mealchangeDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.mealchangeDataGridViewCheckBoxColumn.Visible = false;
+            // 
+            // mealcntDataGridViewTextBoxColumn
+            // 
+            this.mealcntDataGridViewTextBoxColumn.DataPropertyName = "meal_cnt";
+            this.mealcntDataGridViewTextBoxColumn.HeaderText = "meal_cnt";
+            this.mealcntDataGridViewTextBoxColumn.Name = "mealcntDataGridViewTextBoxColumn";
+            this.mealcntDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mealcntDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // replybyDataGridViewTextBoxColumn
+            // 
+            this.replybyDataGridViewTextBoxColumn.DataPropertyName = "reply_by";
+            this.replybyDataGridViewTextBoxColumn.HeaderText = "reply_by";
+            this.replybyDataGridViewTextBoxColumn.Name = "replybyDataGridViewTextBoxColumn";
+            this.replybyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.replybyDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // resDataGridViewTextBoxColumn
+            // 
+            this.resDataGridViewTextBoxColumn.DataPropertyName = "res";
+            this.resDataGridViewTextBoxColumn.HeaderText = "res";
+            this.resDataGridViewTextBoxColumn.Name = "resDataGridViewTextBoxColumn";
+            this.resDataGridViewTextBoxColumn.ReadOnly = true;
+            this.resDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cn_submitdte
+            // 
+            this.cn_submitdte.DataPropertyName = "submit_dte";
+            this.cn_submitdte.HeaderText = "submit_dte";
+            this.cn_submitdte.Name = "cn_submitdte";
+            this.cn_submitdte.ReadOnly = true;
+            this.cn_submitdte.Visible = false;
+            // 
+            // wardenDataGridViewCheckBoxColumn
+            // 
+            this.wardenDataGridViewCheckBoxColumn.DataPropertyName = "warden";
+            this.wardenDataGridViewCheckBoxColumn.HeaderText = "warden";
+            this.wardenDataGridViewCheckBoxColumn.Name = "wardenDataGridViewCheckBoxColumn";
+            this.wardenDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.wardenDataGridViewCheckBoxColumn.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(69, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 13);
+            this.label8.TabIndex = 78;
+            this.label8.Text = "Description:";
+            // 
+            // txt_filter_description
+            // 
+            this.txt_filter_description.Location = new System.Drawing.Point(134, 12);
+            this.txt_filter_description.Name = "txt_filter_description";
+            this.txt_filter_description.Size = new System.Drawing.Size(232, 20);
+            this.txt_filter_description.TabIndex = 77;
+            this.txt_filter_description.TextChanged += new System.EventHandler(this.txt_filter_description_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(2, 15);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 13);
+            this.label10.TabIndex = 74;
+            this.label10.Text = "Filter By: ";
+            // 
+            // ResFunctions
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(856, 577);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_filter_description);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_add);
+            this.Controls.Add(this.dg_functions);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "ResFunctions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Residence Functions";
+            this.Load += new System.EventHandler(this.ResFunctions_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bs_functions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_functions)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private CustomDataGridView dg_functions;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.BindingSource bs_functions;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fndteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fntimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn compDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn confirmationdteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn defaultattendDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dependantsDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cn_folio;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn mealchangeDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mealcntDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn replybyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cn_submitdte;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn wardenDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_filter_description;
+        private System.Windows.Forms.Label label10;
+    }
+}

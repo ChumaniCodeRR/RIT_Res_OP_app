@@ -1,0 +1,121 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using Utilities;
+
+namespace Res_System
+{
+    public partial class Assign_Rooms : Form
+    {
+        public Assign_Rooms(string resname, string rescode)
+        {
+            InitializeComponent();
+            lbl_res.Text = resname;
+            lbl_res.Tag = rescode;
+        }
+
+        private void Assign_Rooms_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                NS_System.StrongTypesNS.DS_BUILDINGSDataSet ds_buildings = Proxy.System.Get_Res_Buildings(Int32.Parse(lbl_res.Tag.ToString()), "Residence");
+                bs_buildings.DataSource = ds_buildings.TT_BUILDING;
+                if (bs_buildings.Count > 0)
+                {
+                    cb_building.SelectedIndex = 0;
+                    Available_Rooms();
+                }
+                else
+                {
+                    MessageBox.Show("Estates have not loaded the buildings and rooms for " + DateTime.Today.Year.ToString() + ". Please contact dmu@ru.ac.za", "Unable to load information", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.ResSystem, ex);
+            }
+        }
+
+        private void Available_Rooms()
+        {
+            try
+            {
+                NS_ResSystem.StrongTypesNS.DS_RESDataSet ds_res = Proxy.Res_System.Get_Available_Rooms(Int32.Parse(lbl_res.Tag.ToString()), cb_building.SelectedValue.ToString());
+
+                DataTable DT = ds_res.TT_ROOMS;
+                DataView DV = DT.DefaultView;
+                DV.Sort = "ROOM_SORT ASC, ROOM_NO ASC";
+
+                DataTable DT1 = ds_res.TT_TAKEN;
+                DataView DV_RoomSort = DT1.DefaultView;
+                DV_RoomSort.Sort = "ROOM_SORT ASC, NAMESTR ASC";
+
+                tT_ROOMSBindingSource.DataSource = DV;
+                tT_STUBindingSource.DataSource = ds_res.TT_STU;
+                tT_TAKENBindingSource.DataSource = DV_RoomSort;
+
+                lbl_room_no.Text = ds_res.TT_ROOMS.Rows.Count.ToString() + " Rooms && "
+                    + ds_res.TT_ROOMS.Compute("SUM(beds)", string.Empty) + " Beds";
+                lbl_stu_to_be_assigned.Text = "(" + ds_res.TT_STU.Rows.Count.ToString() + ")";
+
+                lbl_students_assigned.Text = "(" + ds_res.TT_TAKEN.Rows.Count.ToString() + ")";
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.ResSystem, ex);
+            }
+            
+        }
+
+        private void cb_building_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_building.Enabled == true) Available_Rooms();
+        }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dg_rooms.SelectedCells[0].Value != null && dg_avail_students.SelectedCells[0].Value != null)
+                {
+                    if (dg_rooms.SelectedCells[3].Value.ToString() == dg_avail_students.SelectedCells[2].Value.ToString())
+                    {
+                        Proxy.Res_System.Assign_Res_Room(dg_avail_students.SelectedCells[0].Value.ToString(),
+                           cb_building.SelectedValue.ToString(), dg_rooms.SelectedCells[0].Value.ToString());
+
+                        Available_Rooms();
+                    }
+                    else MessageBox.Show("You can only allocate double room students to double rooms and single room students to single rooms. Please contact student bureua if the student has requested a change. If the room information is wrong (ie, it's not a double room or single room) then contact dmu@ru.ac.za", "Room Allocation Failed", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.ResSystem, ex);
+            }
+        }
+
+        private void btnremove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dg_assigned_students.SelectedCells[0].Value != null)
+                {
+                    Proxy.Res_System.Remove_Student_From_Room(dg_assigned_students.SelectedCells[0].Value.ToString(),
+                        cb_building.SelectedValue.ToString(), dg_assigned_students.SelectedCells[2].Value.ToString());
+
+                    Available_Rooms();
+                }
+            }
+            catch (Exception ex)
+            {
+                Utils.HandleException(ExceptionSource.ResSystem, ex);
+            }
+        }
+
+    }
+}

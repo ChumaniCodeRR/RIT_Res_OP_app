@@ -1,0 +1,281 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+
+namespace Res_System
+{
+    public partial class StudentsPersonalDetails : Form
+    {
+        public StudentsPersonalDetails()
+        {
+            InitializeComponent();
+        }
+       
+        public string PerformAction;
+        public int totalfines;
+        public int finenumber;
+        public int position;
+        
+        
+        
+        public static NS_ResSystem.StrongTypesNS.DS_STUINFODataSet ds_stuinfo = new NS_ResSystem.StrongTypesNS.DS_STUINFODataSet();
+        public static NS_ResSystem.StrongTypesNS.DS_RESULTSDataSet ds_results = new NS_ResSystem.StrongTypesNS.DS_RESULTSDataSet();
+        
+       
+        private void StudentsPersonalDetails_Load(object sender, EventArgs e)
+        {
+            /*
+            tabControl1.SelectTab(Global.Global.PersonalResultstab);
+
+            if (Global.Global.rbsubjyr == "thisyr") rbthisyr.Checked = true;
+            if (Global.Global.rbsubjyr == "lastyr") rblastyr.Checked = true;
+            if (Global.Global.rbsubjyr == "allyrs") rballyrs.Checked = true;
+            */
+
+            cb_kin.DataBindings.Add(new Binding("SelectedValue", ds_stuinfo.tt_stuinfo, "kin"));
+            cb_prefer_diet.DataBindings.Add(new Binding("SelectedValue", ds_stuinfo.tt_stuinfo, "pref_diet"));
+            if (Global.Global.type == "SW") btn_print_results.Enabled = false;
+            Refresh_Data();
+            
+              
+        }
+
+        public void Refresh_Data()
+        {
+            ds_stuinfo = new NS_ResSystem.StrongTypesNS.DS_STUINFODataSet();
+            Global.Global.Connect_DB();
+            Global.Global.resg001.GET_STUDENT_DETAILS(Global.Global.tempstu, out ds_stuinfo);
+            if (Global.Global.type != "SW") Global.Global.resg001.SINGLE_STUDENT(Global.Global.tempstu, out ds_results);
+            Global.Global.Close_DB();
+
+            uploaddata();
+
+            tt_stuinfoBindingSource.DataSource = ds_stuinfo.tt_stuinfo;
+            tt_emergencyBindingSource.DataSource = ds_stuinfo.tt_emergency;
+            tT_DIETBindingSource.DataSource = Global.Global.ds_rescodes.TT_DIET;
+
+            DataView dv_rel = new DataView(Global.Global.ds_rescodes.TT_GEN);
+            dv_rel.RowFilter = "type = 'KI'";
+            tT_GENBindingSource.DataSource = dv_rel;
+
+           
+
+
+            if (Global.Global.type == "AD" | Global.Global.type == "HA")
+            {
+                foreach (Control ctrl in tab_contact.Controls)
+                {
+                    if (ctrl.GetType() == typeof(TextBox)) ((TextBox)ctrl).ReadOnly = false;
+                }
+
+                foreach (Control ctrl in tab_medical.Controls)
+                {
+                    if (ctrl.GetType() == typeof(TextBox)) ((TextBox)ctrl).ReadOnly = false;
+                }
+                txtemail.ReadOnly = true;
+                txtterm.ReadOnly = true;
+                btnSave.Enabled = true;
+
+
+                btn_save_contact_info.Visible = true;
+                cb_kin.Enabled = true;
+                cb_prefer_diet.Enabled = true;
+
+
+            }
+        }
+
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string feedback = "";
+            Global.Global.Connect_DB();
+            Global.Global.resg001.SAVE_MED_AID_INFO(Global.Global.username, ds_stuinfo, out feedback);
+            Global.Global.Close_DB();
+            MessageBox.Show(feedback, "Emergency Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+       
+        private void btn_res_access_Click(object sender, EventArgs e)
+        {
+            if (txtcurr.Text == "") MessageBox.Show("This student is not in res - you may not update their access details until they have registered and are placed in res", "Res Access Dates",
+                    MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            else
+            {
+                bool tempaccess = false;
+                Global.Global.Connect_DB();
+                Global.Global.resg001.PERMISSION_RES_ACCESS(Global.Global.username, Global.Global.tempstu, out tempaccess);
+                Global.Global.Close_DB();
+                
+                res_access frmresaccess = new res_access(tempaccess);
+                frmresaccess.ShowDialog();
+
+                NS_ResSystem.StrongTypesNS.DS_ACCESSDataSet ds_access = new NS_ResSystem.StrongTypesNS.DS_ACCESSDataSet();
+                Global.Global.Connect_DB();
+                Global.Global.resg001.RES_ACCESS_DATES(Global.Global.tempstu, out ds_access);
+                Global.Global.Close_DB();
+                res_startTextBox.Text = (ds_access.TT_ACCESS[0]["start_dte"].ToString()).Substring(0,10);
+                res_expiryTextBox.Text = (ds_access.TT_ACCESS[0]["end_dte"].ToString()).Substring(0,10);
+                /*
+                else MessageBox.Show("You do not have privledges to change the access dates for this student. Please contact the relevant Hall warden.", "Res Access Dates",
+                    MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                 */
+            }
+        }
+
+        
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            Reports frmreports = new Reports("Stu_Info", Global.Global.tempstu);
+            frmreports.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Reports frmreports = new Reports("Stu_Info", Global.Global.tempstu);
+            frmreports.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Reports frmreports = new Reports("Med_Aid", Global.Global.tempstu);
+            frmreports.Show();
+        }
+
+        private void btn_save_alt_info_Click(object sender, EventArgs e)
+        {
+            string feedback = "";
+            Global.Global.Connect_DB();
+            Global.Global.resg001.SAVE_ALT_INFO(Global.Global.username, ds_stuinfo, out feedback);
+            Global.Global.Close_DB();
+            MessageBox.Show(feedback, "Alternate Contact Information", MessageBoxButtons.OK, MessageBoxIcon.Information);               
+        }
+
+        
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Reports frmreports = new Reports("Results", Global.Global.tempstu);
+            frmreports.Show();
+        }
+
+        private void rballyrs_CheckedChanged(object sender, EventArgs e)
+        {
+                uploaddata();
+        }
+
+        private void rblastyr_CheckedChanged(object sender, EventArgs e)
+        {            
+                uploaddata();            
+        }
+
+        private void rbthisyr_CheckedChanged(object sender, EventArgs e)
+        {
+                uploaddata();            
+        }
+
+        private void uploaddata()
+        {
+
+            dg_results.DataSource = null;
+            DataTable dt = (DataTable)ds_results.TT_RESULTS;
+            DataView dv = new DataView(dt);
+
+            if (rbthisyr.Checked == true) dv.RowFilter = "yr = " + DateTime.Today.Year.ToString();
+            if (rblastyr.Checked == true) dv.RowFilter = "yr = " + (DateTime.Today.Year - 1).ToString();
+
+            dg_results.DataSource = dv;
+
+            dg_results.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            dg_comments.DataSource = null;
+            dg_comments.DataSource = ds_results.TT_COMMENTS;
+            dg_comments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            dg_matr_results.DataSource = null;
+            dg_matr_results.DataSource = ds_results.TT_MATR;
+            dg_matr_results.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            tT_MATR_DETAILSBindingSource1.DataSource = ds_results.TT_MATR_DETAILS;
+
+        }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void txtcellno_Leave(object sender, EventArgs e)
+        {
+            if (txtcellno.ReadOnly == false)
+            {
+                string cellno = "";
+                string errormsg = "";
+                checkcell(txtcellno.Text, out cellno, out errormsg);
+                txtcellno.Text = cellno;
+                if (errormsg != "")
+                {
+                    MessageBox.Show(errormsg, "Cell Phone Incorrectly Captured", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtcellno.Focus();
+                }
+            }
+
+        }
+
+        private void checkcell(string cellno, out string newcell, out string errormsg)
+        {
+            errormsg = "";
+            Global.Global.Connect_DB();
+            Global.Global.libSys.CHECK_CELL(ref cellno, out errormsg);
+            Global.Global.Close_DB();
+            newcell = cellno;            
+        }
+
+        private void textBox22_Leave(object sender, EventArgs e)
+        {
+            string cellno = "";
+            string errormsg = "";
+            checkcell(txt_kin_cell.Text, out cellno, out errormsg);
+            txt_kin_cell.Text = cellno;
+            if (errormsg != "")
+            {
+                MessageBox.Show(errormsg, "Cell Phone Incorrectly Captured", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_kin_cell.Focus();
+            }
+        }
+
+        private void txt_alt_cell_Leave(object sender, EventArgs e)
+        {
+            string cellno = "";
+            string errormsg = "";
+            checkcell(txt_alt_cell.Text, out cellno, out errormsg);
+
+            txt_alt_cell.Text = cellno;
+            if (errormsg != "")
+            {
+                MessageBox.Show(errormsg, "Cell Phone Incorrectly Captured", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_alt_cell.Focus();
+            }
+        }
+
+        private void txtemail_MouseClick(object sender, MouseEventArgs e)
+        {
+            System.Diagnostics.Process.Start("mailto:" + txtemail.Text);
+        }
+
+        private void Btn_Close_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+        }       
+    }
+}
